@@ -3,7 +3,7 @@
 
 - **Team:** [Smash Bros]
 - **Content Lead:** [攀焱霖-Elijah Hopple]
-- **Version:** 1.0 · **Updated:** 17 Oct 2026
+- **Version:** 1.1 · **Updated:** 19 Oct 2026
 - **Audience:** a beginner with no prior CS or AI background, learning independently.
 - **Theme:** a *fictional* FBI-style investigation. 
 
@@ -20,6 +20,15 @@ How can an analyst organize case information, search it efficiently, and judge a
 | **Connectionist AI** | Neuron (inputs, weights, weighted sum, activation); layers; arrays/matrices holding inputs and weights; training vs. inference; learned patterns vs. fixed rules; errors (false positives and negatives), limited or unrepresentative training data, human verification | Which kinds of task suit neural networks (e.g., images) | Backpropagation calculus; large-scale deep learning and big data (a separate course module); real biometric or identification systems |
 
 **Bridge:** a neural network is itself an algorithm running on arrays of numbers. Lookup and graph search organize the case around it; they do not recognize images.
+
+## History & Key People
+
+Briefly introduce the historical development of algorithms, data structures, and connectionist AI, from Euclid's early algorithm to modern neural networks.
+
+Include one timeline slide and short explanations in the study guide. Historical context will support the main technical material without introducing advanced theory.
+
+**Full timeline:** [History & Key People](history.md)
+
 
 ## Learning Objectives
 
@@ -43,8 +52,8 @@ Each has a worked example, a learner exercise, an answer key, and a common-mista
 
 One reviewed Markdown source feeds all three; a correction is made there first, then pushed to every deliverable.
 
-- **Study guide:** objectives, explanations, activities, answer keys, references.
-- **Slides:** diagrams of the graph, queue/stack, and neuron, plus worked examples.
+- **Study guide:** objectives, explanations, brief historical context, activities, answer keys, references.
+- **Slides:** one historical timeline, diagrams of the graph, queue/stack, and neuron, plus worked examples.
 - **Videos:** narrated BFS/DFS traces and the neuron calculation.
 
 ## Quality Gates
