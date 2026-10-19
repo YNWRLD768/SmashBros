@@ -7,7 +7,7 @@
 | Name | Student ID | Role / Focus | GitHub Username |
 | :--- | :--- | :--- | :--- |
 | **Alemayehu Samuel Ermiyas** | 1820262061 | CEO (Coordinator) | @YNWRLD768 |
-| **** |  | CIO |  |
+| **Rama Rizqi Riadi** | 1820262049 | CIO | @sheeshbrov |
 | **Elijah Noel Hopple** | 1820262321 |Content Lead | @ehopple12 |
 | **Mohamed Rizvi Yahya** | 1820262044 | Visual Design Lead | @yahyarizvi600-ux |
 | **Vincent Jordan Lim** | 1820262076 | Video Lead | @TheJordannn |
