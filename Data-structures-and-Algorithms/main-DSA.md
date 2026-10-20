@@ -78,6 +78,7 @@ Platforms like YouTube and Spotify store user preference histories and media cat
 [ User Interaction ] ──> [ Liked Video History ] ──> [ Recommendation Engine (Graph/Hash Table) ]
 
 ```
+![Youtube recommendation](../assets/Image_20261019210641_78_91.png)
 ### 2. Navigation & Mapping
 
 Google Maps models physical environments as graphs, where intersections act as vertices (nodes) and roads act as weighted edges. Graph traversal algorithms process these networks to compute the fastest route in real time.
