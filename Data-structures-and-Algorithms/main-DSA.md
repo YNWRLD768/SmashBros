@@ -97,6 +97,7 @@ Online storefronts use hash maps to catalog inventory items by product ID and tr
 [ Product Catalog ] ──> [ Category Tree ] ──> [ Inverted Index / Hash Table for Instant Search ]
 
 ```
+![E-commerce site](../assets/Image_2026_10_20_210219.png)
 
 ### 4. Database Cataloging
 
