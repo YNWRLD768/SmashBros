@@ -216,6 +216,8 @@ For example, O(1) means the amount of work stays bounded as the input grows. It 
   O(1)        <      O(log n)      <       O(n)        <     O(n log n)     <      O(n²)
 [Constant]         [Logarithmic]          [Linear]          [Linearithmic]       [Quadratic]
 
+** draw this diagram**
+
 ```
 
 ### 1. Constant Time: $O(1)$
@@ -306,7 +308,7 @@ For example, imagine an array containing four fictional FBI case IDs:
 | 1 | 102 | 1004 |
 | 2 | 103 | 1008 |
 | 3 | 104 | 1012 |
-
+** draw this diagram** 
 Assume each ID occupies 4 bytes and the first element begins at address 1000.
 
 To access the element at index 2, the computer can calculate its address:
@@ -392,7 +394,7 @@ Head
 ├──────┼──────┤    ├──────┼──────┤    ├──────┼──────┤
 │  10  │ 0x02 │    │  20  │ 0x03 │    │  30  │ 0x00 │
 └──────┴──────┘    └──────┴──────┘    └──────┴──────┘
-
+** draw this diagram** 
 ```
 
 #### Types of Linked Lists
@@ -442,6 +444,7 @@ Stacks can be implemented using arrays or linked lists. Their defining feature i
         ├──────────┤  │
         │  Data A  │  │ Bottom
         └──────────┘  
+** draw this diagram** 
 
 #### FBI Example: Investigating Leads
 
@@ -511,6 +514,8 @@ In a FIFO processing queue, the records are processed in the order **A → B →
 │ Incoming│───>│ Element│ Element│ Element│ Element│ Element│───>│ Outgoing│
 └────────┘    └────────┴────────┴────────┴────────┴────────┘    └────────┘
                Rear (Tail)                         Front (Head)
+
+** draw this diagram** 
 
 ```
 
@@ -606,6 +611,8 @@ A graph is a non-linear network structure composed of a set of vertices (or node
      │                 │
     (C) ───────────── (D)
 
+** draw this diagram** 
+
 ```
 
 #### Core Classifications
@@ -644,6 +651,8 @@ Hash tables provide **expected O(1) lookup** under suitable conditions, making t
 
 ```
 Key ("John") ───> [ Hash Function ] ───> Index 3 ───> Array[3] = "555-0199"
+
+** draw this diagram** 
 
 ```
 
@@ -800,6 +809,8 @@ The algorithm checks each element:
 | 3 | 65 | Not a match |
 | 4 | 28 | Not a match |
 | 5 | 91 | Match found |
+
+** draw this diagram** 
 
 The algorithm requires **5 comparisons**.
 
