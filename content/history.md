@@ -20,7 +20,9 @@ This section provides brief historical context rather than detailed biographies 
 | 1943 | **Warren McCulloch & Walter Pitts** | Introduced an influential mathematical model of artificial neurons and neural networks, helping establish the theoretical foundations of connectionist AI. |
 | 1945 / 1959 | **Konrad Zuse & Edward F. Moore** | Zuse described an early breadth-first-search approach in his Plankalkül work. Moore independently described breadth-first search for finding shortest paths through mazes in 1959. |
 | 1953 | **Hans Peter Luhn** | Described an early hashing method in an internal IBM memorandum, helping establish techniques for efficient data retrieval. |
-| 1957–1960 | **Frank Rosenblatt** | Developed the perceptron, an early neural network capable of learning from examples. A simulation was demonstrated on an IBM 704 in 1958, followed by dedicated hardware. |
+
+| 1957–1958 | **Frank Rosenblatt** | Described the perceptron in 1957, an early neural network capable of learning simple classification tasks. By 1958, Rosenblatt and his colleagues had constructed the Mark I Perceptron, demonstrating an early hardware implementation of neural-network ideas. |
+
 | 1969 | **Marvin Minsky & Seymour Papert** | Published *Perceptrons*, analyzing limitations of simple perceptron systems, including problems requiring nonlinearly separable classifications such as XOR. |
 | 1986 | **David Rumelhart, Geoffrey Hinton & Ronald Williams** | Popularized backpropagation as a method for training multilayer neural networks by adjusting connection weights. |
 | 2018 (announced 2019) | **Geoffrey Hinton, Yoshua Bengio & Yann LeCun** | Received the 2018 ACM A.M. Turing Award for major contributions to deep neural networks and modern AI. |
@@ -56,6 +58,14 @@ These developments connect directly to our three main learning areas:
 - **Video:** Brief historical introduction connecting early algorithms to modern AI.
 - **Learning Check:** Students identify one important historical contribution and explain its relevance to algorithms, data structures, or connectionist AI.
 
+### Beginner Learning Check
+
+**Question:** What is one important difference between Euclid's algorithm and Rosenblatt's perceptron?
+
+**Answer:** Euclid's algorithm follows a fixed set of mathematical steps to solve a problem. Rosenblatt's perceptron introduced a system that could adjust its weights based on training examples.
+
+**Key takeaway:** Traditional algorithms follow defined procedures, while learning algorithms can adjust a model's parameters using data. Neural networks still operate through algorithms.
+
 Historical context is supplementary. Detailed biographies, mathematical derivations, and historical debates are outside the module's scope.
 
 
@@ -90,3 +100,8 @@ Historical context is supplementary. Detailed biographies, mathematical derivati
 9. IEEE Spectrum — Hans Peter Luhn and the Birth of the Hashing Algorithm  
    https://spectrum.ieee.org/hans-peter-luhn-and-the-birth-of-the-hashing-algorithm
 
+10. EPFL Graph Search — History of Breadth-First Search  
+    https://graphsearch.epfl.ch/en/concept/97026
+
+11. Smithsonian Institution — Electronic Neural Network, Mark I Perceptron  
+    https://www.si.edu/object/electronic-neural-network-mark-i-perceptron:nmah_334414
