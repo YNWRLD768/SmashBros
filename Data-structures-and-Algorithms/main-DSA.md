@@ -88,6 +88,7 @@ Google Maps models physical environments as graphs, where intersections act as v
 
 ```
 
+![Map recommendation](../assets/Image_20261020155655_80_91.png)
 ### 3. E-Commerce Platforms
 
 Online storefronts use hash maps to catalog inventory items by product ID and trees to manage hierarchical category filtering (e.g., Electronics > Audio > Headphones).
