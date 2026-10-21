@@ -156,7 +156,6 @@ For example, O(1) means the amount of work stays bounded as the input grows. It 
 
 ![Big O notation](../assets/Creation_Image_1792588303009_1.png)
 
-> **✏️ HAND-DRAWN DIAGRAM TODO — Big O:** Draw a line graph with axes Input size (n) and Number of operations comparing O(1), O(log n), and O(n).
 
 ### 1. Constant Time: $O(1)$
 
