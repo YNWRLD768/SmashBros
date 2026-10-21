@@ -109,30 +109,7 @@ Libraries, academic databases, and large enterprise databases utilize B-trees an
 
 Data structures fall into two main categories: **Linear** and **Non-Linear** structures.
 
-```
-                      ┌───────────────────────────────┐
-                      │    Classification of DS       │
-                      └──────────────┬────────────────┘
-                                     │
-         ┌───────────────────────────┴───────────────────────────┐
-         ▼                                                       ▼
-┌───────────────────┐                                   ┌───────────────────┐
-│   Linear DS       │                                   │   Non-Linear DS   │
-└────────┬──────────┘                                   └─────────┬─────────┘
-         │                                                        │
- ┌───────┴───────┐                                        ┌───────┴───────┐
- ▼               ▼                                        ▼               ▼
-┌─────────┐   ┌──────────┐                             ┌──────┐        ┌──────┐
-│ Static  │   │ Dynamic  │                             │ Trees│        │ Graphs│
-└────┬────┘   └────┬─────┘                             └──────┘        └──────┘
-     │             ├───────────────┬──────────────┐
-     ▼             ▼               ▼              ▼
-┌─────────┐   ┌──────────┐    ┌─────────┐    ┌──────────┐
-│ Arrays  │   │  Linked  │    │ Stacks  │    │  Queues  │
-│         │   │  Lists   │    │         │    │          │
-└─────────┘   └──────────┘    └─────────┘    └──────────┘
-
-```
+![Classification of data sructures](../assets/Creation_Image_1792587379834_1.png) 
 
 ### 1. Linear Data Structures
 
