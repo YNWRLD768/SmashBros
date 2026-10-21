@@ -272,18 +272,7 @@ Other variations exist, such as doubly linked and circular linked lists, but the
 
 The key distinction is that arrays support direct indexing, while linked lists connect nodes through references.
 
-```
-Head
- │
- ▼
-┌──────┬──────┐    ┌──────┬──────┐    ┌──────┬──────┐
-│ Data │ Next ├───>│ Data │ Next ├───>│ Data │ Null │
-├──────┼──────┤    ├──────┼──────┤    ├──────┼──────┤
-│  10  │ 0x02 │    │  20  │ 0x03 │    │  30  │ 0x00 │
-└──────┴──────┘    └──────┴──────┘    └──────┴──────┘
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Linked lists:** Draw three linked nodes with pointers and a final NULL reference, contrasting with a contiguous array.
+![linked list](../assets/Drawn/Creation_Image_1792593405528_1.png)
 
 #### Types of Linked Lists
 
