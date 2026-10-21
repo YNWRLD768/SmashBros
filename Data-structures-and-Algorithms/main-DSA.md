@@ -149,11 +149,7 @@ When evaluating an algorithm or data structure, we measure efficiency using two 
 
 Big O notation describes the upper bound or worst-case scenario of an algorithm's resource consumption as the input size grows toward infinity.
 
-```
-  O(1)        <      O(log n)      <       O(n)        <     O(n log n)     <      O(n²)
-[Constant]         [Logarithmic]          [Linear]          [Linearithmic]       [Quadratic]
-
-```
+![Big O notation](../assets/Creation_Image_1792588303009_1.png)
 
 ### 1. Constant Time: $O(1)$
 
