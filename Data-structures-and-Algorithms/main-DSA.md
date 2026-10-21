@@ -29,7 +29,7 @@
 
 ## What is a Data Structure?
 
-A data structure is a specialized layout for organizing, storing, and managing data in a computer's memory so that it can be accessed and modified efficiently.
+A **data structure** is a specialized layout for organizing, storing, and managing data in a computer's memory so that it can be accessed and modified efficiently.
 
 Think of it as a physical container or filing system designed for specific types of information. Just as you would store clothes in a wardrobe, documents in a filing cabinet, and tools in a toolbox, you choose specific data structures based on how you intend to search, sort, and update your data.
 
@@ -66,8 +66,8 @@ An investigation may involve relationships between fictional individuals, locati
 
 A **graph** can represent these relationships:
 
-- Nodes represent individuals or locations.
-- Edges represent connections between them.
+- **Nodes** represent individuals or locations.
+- **Edges** represent connections between them.
 
 Algorithms such as BFS and DFS can then explore the graph systematically.
 
@@ -80,7 +80,7 @@ Different tasks may require different processing orders.
 
 These examples demonstrate how choosing the right data structure supports efficient problem-solving.
 
-**Note:** All FBI-style scenarios are fictional and used for educational purposes only.
+
 
 ---
 
@@ -118,7 +118,7 @@ Non-linear structures represent relationships that do not follow a single sequen
 - **Trees:** Organize information hierarchically.
 - **Graphs:** Connect nodes through edges.
 
-Graphs will be explored further when introducing Breadth-First Search (BFS) and Depth-First Search (DFS).
+Graphs will be explored further when introducing **Breadth-First Search (BFS)** and **Depth-First Search (DFS)**.
 
 ### Data Structure Classification Diagram
 
@@ -151,7 +151,7 @@ When evaluating an algorithm or data structure, we measure efficiency using two 
 
 ## Big O Notation
 
-Big O notation describes an **asymptotic upper bound** on how an algorithm's time or memory usage grows as the input size increases.
+**Big O** notation describes an **asymptotic upper bound** on how an algorithm's time or memory usage grows as the input size increases.
 
 Although Big O is commonly used to describe worst-case complexity, it does not automatically mean "worst case." It can describe the growth of best-case, average-case, or worst-case resource usage, depending on what is being analyzed.
 
@@ -225,7 +225,7 @@ Execution time scales quadratically with input size, often caused by nested loop
 
 ### Arrays
 
-An array is a collection of elements stored at contiguous memory locations, where each item can be accessed directly using an integer index.
+An **array** is a collection of elements stored at contiguous memory locations, where each item can be accessed directly using an integer index.
 
 ### Why Contiguous Memory Matters
 
@@ -379,7 +379,7 @@ Imagine an investigator places three fictional case leads onto a stack:
 2. Lead B is added.
 3. Lead C is added.
 
-Because stacks follow LIFO, the investigator processes **Lead C first**, followed by B and then A.
+Because stacks follow LIFO, the investigator processes **Lead C first**, **followed by B** and **then A**.
 
 **Connection to algorithms:** Depth-First Search (DFS) can use a stack to explore one path before backtracking.
 
@@ -454,7 +454,7 @@ In a FIFO processing queue, the records are processed in the order **A → B →
 
 ## Overview of Non-Linear Data Structures
 
-Unlike linear data structures, non-linear structures organize information through hierarchical or interconnected relationships.
+Unlike linear data structures, **non-linear structures** organize information through hierarchical or interconnected relationships.
 
 Two examples are **trees** and **graphs**.
 
@@ -499,7 +499,7 @@ This module focuses on **graphs**, since they are directly connected to Breadth-
 
 ## Graphs
 
-A graph is a non-linear network structure composed of a set of vertices (or nodes) $V$ and a set of edges $E$ that connect pairs of vertices.
+A **graph** is a non-linear network structure composed of a set of vertices (or nodes) $V$ and a set of edges $E$ that connect pairs of vertices.
 
 ```
     (A) ───────────── (B)
@@ -514,7 +514,7 @@ A graph is a non-linear network structure composed of a set of vertices (or node
 #### Core Classifications
 
 1. **Directed Graph (Digraph):** Edges have directions (one-way connections).
-2. **Undirected Graph:** Edges are bidirectional (two-way connections).
+2. **Undirected Graph:** Edges are **bidirectional** (two-way connections).
 3. **Weighted Graph:** Edges carry numerical values representing cost, distance, or latency.
 4. **Unweighted Graph:** All edges carry equal weight.
 
@@ -533,7 +533,7 @@ A graph is a non-linear network structure composed of a set of vertices (or node
 
 A **hash table** (or hash map) is a data structure that stores information as **key-value pairs**.
 
-A key is used to find its associated value. A **hash function** converts the key into a number that helps determine where the information is stored in an underlying array.
+A **key** is used to find its associated value. A **hash function** converts the key into a number that helps determine where the information is stored in an **underlying array**.
 
 For example, in a fictional FBI investigation, a case ID could serve as the key, while the corresponding case record is the value.
 
@@ -621,7 +621,7 @@ For this simplified example, the hash function is:
 
 **Index = Case ID mod 5**
 
-Here, "mod" means the remainder after division.
+Here, **"mod"** means the remainder after division.
 
 ### Worked Example
 
@@ -652,13 +652,13 @@ Case ID 111 will also map to index 1.
 
 A hash table does not compare how similar two records are.
 
-It retrieves information using a key. Recognizing patterns in images is a different task that can involve connectionist AI.
+It retrieves information using a key. Recognizing patterns in images is a different task that can involve **connectionist AI**.
 
 ---
 
 # 6 Essential Algorithms
 
-Algorithms are step-by-step instructions for solving problems.
+**Algorithms** are step-by-step instructions for solving problems.
 
 A **program** is an implementation of one or more algorithms in a programming language.
 
@@ -720,7 +720,7 @@ RETURN "Not found"
 
 **Binary search** repeatedly divides the remaining search range in half.
 
-**Important: Binary search requires sorted data.**
+**Important:** Binary search requires sorted data.
 
 #### FBI Example: Searching Sorted Case Records
 
@@ -834,7 +834,7 @@ Connections:
 
 BFS explores nodes **level by level**, using a **queue (FIFO)**.
 
-A queue processes the first item added before later items.
+A **queue** processes the first item added before later items.
 
 #### BFS Worked Example
 
