@@ -201,14 +201,7 @@ In a fixed-length array, elements of the same size are stored next to one anothe
 
 For example, imagine an array containing four fictional FBI case IDs:
 
-| Index | Case ID | Memory Address |
-|---|---|---|
-| 0 | 101 | 1000 |
-| 1 | 102 | 1004 |
-| 2 | 103 | 1008 |
-| 3 | 104 | 1012 |
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Arrays:** Draw the four-case-ID contiguous array showing indices 0–3, addresses 1000–1012, and index-2 access.
+![Arrays illustration table](../assets/Drawn/Creation_Image_1792591572896_1.png)
 
 Assume each ID occupies 4 bytes and the first element begins at address 1000.
 
