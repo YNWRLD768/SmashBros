@@ -191,7 +191,7 @@ Execution time scales quadratically with input size, often caused by nested loop
 
 
 
-![complexity summary matrix](../assets/Creation_Image_1792588303009_1.png)
+![complexity summary matrix](../assets/Image_20261021212451_195_156.jpg)
 
 # 3 Linear Data Structures
 
