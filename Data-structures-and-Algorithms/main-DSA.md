@@ -88,10 +88,7 @@ These examples demonstrate how choosing the right data structure supports effici
 
 Data structures can be divided into two main categories: **Linear** and **Non-Linear**.
 
-| Category | Definition | Examples |
-|---|---|---|
-| **Linear** | Elements are organized in a sequence. | Arrays, Linked Lists, Stacks, Queues |
-| **Non-Linear** | Elements form hierarchical or interconnected relationships. | Trees, Graphs |
+![Classification of data sructures](../assets/Creation_Image_1792587379834_1.png) 
 
 ### 1. Linear Data Structures
 
@@ -157,10 +154,7 @@ Although Big O is commonly used to describe worst-case complexity, it does not a
 
 For example, O(1) means the amount of work stays bounded as the input grows. It does **not** mean an operation always takes exactly the same amount of real-world time.
 
-```
-  O(1)        <      O(log n)      <       O(n)        <     O(n log n)     <      O(n²)
-[Constant]         [Logarithmic]          [Linear]          [Linearithmic]       [Quadratic]
-```
+![Big O notation](../assets/Creation_Image_1792588303009_1.png)
 
 > **✏️ HAND-DRAWN DIAGRAM TODO — Big O:** Draw a line graph with axes Input size (n) and Number of operations comparing O(1), O(log n), and O(n).
 
