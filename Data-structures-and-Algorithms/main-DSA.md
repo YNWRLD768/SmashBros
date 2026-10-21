@@ -188,26 +188,7 @@ Execution time scales quadratically with input size, often caused by nested loop
 
 - **Example:** Bubble Sort, Insertion Sort, and Selection Sort.
 
----
-
-## Complexity Summary Matrix
-
-| Data Structure | Access / Search | Insertion | Deletion |
-|---|---|---|---|
-| **Array** | O(1) by index; O(n) linear search | O(n) | O(n) |
-| **Linked List** | O(n) | O(1)* | O(1)* |
-| **Stack** | O(1) top access; O(n) search | O(1) push | O(1) pop |
-| **Queue** | O(1) front access; O(n) search | O(1) enqueue | O(1) dequeue |
-| **Hash Table** | Expected O(1); worst O(n) | Expected O(1); worst O(n) | Expected O(1); worst O(n) |
-
-### Important Notes
-
-- **Arrays:** Accessing a known index is O(1), but searching an unsorted array is O(n). Inserting or deleting at an arbitrary position can require shifting elements, taking O(n).
-- **Linked Lists:** Insertion and deletion can be O(1) when the required node or link location is already known. Finding that location may take O(n). For a singly linked list, deletion generally requires access to the preceding node.
-- **Stacks and Queues:** These complexities assume standard implementations supporting constant-time push/pop or enqueue/dequeue operations.
-- **Hash Tables:** Expected O(1) performance assumes suitable hashing, controlled collisions, and bounded key-processing costs. In the worst case, operations can take O(n).
-
----
+![complexity summary matrix](../assets/Image_20261021212451_195_156.jpg)
 
 # 3 Linear Data Structures
 
