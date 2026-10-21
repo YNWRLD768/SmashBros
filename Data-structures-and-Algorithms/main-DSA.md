@@ -195,20 +195,7 @@ Execution time scales quadratically with input size, often caused by nested loop
 
 
 
----
-
-## Complexity Summary Matrix
-
-| Data Structure / Operation | Access | Search | Insertion | Deletion |
-| --- | --- | --- | --- | --- |
-| **Array** | $O(1)$ | $O(n)$ | $O(n)$ | $O(n)$ |
-| **Linked List** | $O(n)$ | $O(n)$ | $O(1)$ | $O(1)$ |
-| **Stack** | $O(n)$ | $O(n)$ | $O(1)$ | $O(1)$ |
-| **Queue** | $O(n)$ | $O(n)$ | $O(1)$ | $O(1)$ |
-| **Binary Search Tree** | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ |
-| **Hash Table** | N/A | $O(1)$ | $O(1)$ | $O(1)$ |
-
----
+![complexity summary matrix](../assets/Creation_Image_1792588303009_1.png)
 
 # 3 Linear Data Structures
 
