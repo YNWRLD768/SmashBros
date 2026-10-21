@@ -88,7 +88,7 @@ These examples demonstrate how choosing the right data structure supports effici
 
 Data structures can be divided into two main categories: **Linear** and **Non-Linear**.
 
-![Classification of data sructures](../assets/Creation_Image_1792587379834_1.png) 
+
 
 ### 1. Linear Data Structures
 
@@ -119,15 +119,9 @@ Graphs will be explored further when introducing **Breadth-First Search (BFS)** 
 
 ### Data Structure Classification Diagram
 
-```text
-                    Data Structures
-                    /           \
-                Linear        Non-linear
-             /   |   |  \      /    \
-         Arrays Lists Stacks Queues Trees Graphs
-```
+![Classification of data sructures](../assets/Drawn/Creation_Image_1792587379834_1.png) 
 
-> **✏️ HAND-DRAWN DIAGRAM TODO — Classification:** Draw a clear two-branch diagram showing arrays, linked lists, stacks, and queues as linear; trees and graphs as non-linear. Do not classify stacks or queues as inherently dynamic.
+
 
 **Remember:** Linear versus non-linear describes organization. Fixed-size versus dynamically growing describes storage. Stacks and queues can have either kind of implementation.
 
@@ -154,7 +148,7 @@ Although Big O is commonly used to describe worst-case complexity, it does not a
 
 For example, O(1) means the amount of work stays bounded as the input grows. It does **not** mean an operation always takes exactly the same amount of real-world time.
 
-![Big O notation](../assets/Creation_Image_1792588303009_1.png)
+![Big O notation](../assets/Drawn/Creation_Image_1792588303009_1.png)
 
 
 ### 1. Constant Time: $O(1)$
