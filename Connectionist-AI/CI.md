@@ -1,7 +1,7 @@
 # Connectionist AI: Learning Patterns from Examples
 
 
-**Where this chapter fits.** In the Algorithms and Data Structures (DSA) chapter we learned how to *organize* case information and *search* it efficiently. This chapter asks a different question: what happens when a computer *finds a pattern* in that information, and how should an analyst treat the result?
+**Where this chapter fits.** In the Algorithms and Data Structures (DSA) chapter we learned how to **organize** case information and **search** it efficiently. This chapter asks a different question: what happens when a computer **finds a pattern** in that information, and how should an analyst treat the result?
 
 > **Central question:** How can analysts organize case information, search it efficiently, and assess patterns identified by AI without mistaking predictions for verified evidence?
 
@@ -28,13 +28,13 @@ In a fictional FBI field office, an analyst receives an AI-prioritized image lis
 
 Imagine a fictional case called **Harbor-17**. Analysts have collected 40,000 photographs from roadside cameras near an invented warehouse district. Someone has asked: *"Which of these images show a truck?"*
 
-In the DSA chapter, we would first organize the images, for example by storing each record in a hash table keyed by image ID so that any one image can be found quickly. But organizing 40,000 images does not tell us what is *in* them. Reviewing all 40,000 manually would be slow, so a classifier could help **prioritize** images for human examination.
+In the DSA chapter, we would first organize the images, for example by storing each record in a hash table keyed by image ID so that any one image can be found quickly. But organizing 40,000 images does not tell us what is in them. Reviewing all 40,000 manually would be slow, so a classifier could help **prioritize** images for human examination.
 
 One option is to write rules by hand: *"If the vehicle is longer than 6 metres and has a boxy rear, call it a truck."* This works for some vehicles and fails for others. Pickup trucks are short, and delivery vans are boxy. Real vehicles keep breaking our rules.
 
-Another option is to train a computer on many images labeled "truck" or "not truck" and let it **learn useful patterns from examples**, rather than specifying every decision rule by hand. This is the idea behind **connectionist AI**.
+Another option is to train a computer on many images labeled **"truck"** or **"not truck"** and let it **learn useful patterns from examples**, rather than specifying every decision rule by hand. This is the idea behind **connectionist AI**.
 
-This approach is powerful, but it can be oversold. A program that says "truck, confidence 0.88" has produced a **prediction**, not a fact. The rest of this chapter explains how such predictions are produced, why they can be wrong, and why a human must verify them.
+This approach is powerful, but it can be oversold. A program that says **"truck, confidence 0.88"** has produced a prediction, not a fact. The rest of this chapter explains how such predictions are produced, why they can be wrong, and why a human must verify them.
 
 **Learning goals.** After this chapter you should be able to explain:
 
@@ -51,7 +51,7 @@ This approach is powerful, but it can be oversold. A program that says "truck, c
 
 **Connectionist AI** is an approach in which a system learns useful patterns using many simple numerical units, called **artificial neurons**, that are connected together. Much of what the system learns is represented by numerical **weights** and other parameters, rather than a complete set of hand-written classification rules.
 
-The approach is *inspired* by the brain, in which many simple cells pass signals to one another. It is only loosely inspired. An artificial neuron is a small piece of arithmetic, not a model of a living cell (see Section 3).
+The approach is **inspired** by the brain, in which many simple cells pass signals to one another. It is only loosely inspired. An artificial neuron is a small piece of arithmetic, not a model of a living cell (see Section 3).
 
 ### Fixed rules versus learned patterns
 
@@ -66,7 +66,7 @@ The approach is *inspired* by the brain, in which many simple cells pass signals
 
 Do not think of a neural network as magic. Strictly speaking, the **neural network is a model**; algorithms are the procedures used to train it and calculate its outputs. Those procedures follow defined steps: multiply, add, apply an activation function, and pass values onward. A programmer specifies the model design and computation steps, while training determines many of the numerical **parameters** (such as weights).
 
-> **Check yourself.** A colleague says, "Neural networks do not use algorithms because they learn their own rules."
+> **Check yourself.** A colleague says, **"Neural networks do not use algorithms because they learn their own rules."**
 > **Answer:** Incorrect. Algorithms perform training and prediction. The network learns numerical parameter values through training; it does not invent its own computing instructions.
 
 ---
@@ -116,11 +116,11 @@ The neuron gave more influence to the boxy-rear feature (weight 2) than to size 
 
 ### A note on bias
 
-Many descriptions rewrite the threshold as an extra number called the **bias parameter**: "add the bias to the sum, then check whether the result is above 0". Our threshold of `1.5` is equivalent to a bias of `-1.5` when the rule is **output 1 if `weighted sum + bias >= 0`**. Keep this in mind, because in Section 7 we meet a completely different use of the word "bias".
+Many descriptions rewrite the threshold as an extra number called the **bias parameter**: "add the bias to the sum, then check whether the result is above 0". Our threshold of `1.5` is equivalent to a bias of `-1.5` when the rule is **output 1 if `weighted sum + bias >= 0`**. Keep this in mind, because in Section 7 we meet a completely different use of the word **"bias"**.
 
 ### Neuron versus biological neuron
 
-A biological neuron is a living cell with chemistry and structure far richer than a weighted sum. The artificial neuron borrows one *idea* (many signals combine, and the result is passed on) and turns it into arithmetic. Calling it "a tiny brain cell" is a metaphor, not a description.
+A **biological neuron** is a living cell with chemistry and structure far richer than a weighted sum. The artificial neuron borrows one *idea* (many signals combine, and the result is passed on) and turns it into arithmetic. Calling it "a tiny brain cell" is a metaphor, not a description.
 
 > **Check yourself.** In the example, what happens to Image A's output if `w1` is changed from 2 to 0.5?
 > **Answer:** The sum becomes (0.5 x 0.8) + (1 x 0.6) = 1.0, which is below 1.5, so the output becomes 0. A weight change flipped the decision.
@@ -147,7 +147,7 @@ We reuse Image A (`x1 = 0.8`, `x2 = 0.6`) and add a hidden layer of two neurons 
 | Hidden B | "boxiness-minus-size signal" | 1, -1 | 0.5 | 0.8 - 0.6 = 0.2 | 0 |
 | Output | "truck" | 1, -1 | 0.5 | (1 x 1) + (-1 x 0) = 1 | 1 |
 
-The output neuron receives the *outputs of the hidden neurons*, not the original input numbers directly. For Image A, Hidden A outputs 1 and Hidden B outputs 0, so the final output is 1 ("truck-like"). Importantly, **Hidden A is not an exact "large AND boxy" rule**: its first input alone can be high enough to pass the threshold. Its descriptive label is a teaching aid, not a claim about a precise logical condition.
+The output neuron receives the **outputs of the hidden neurons**, not the original input numbers directly. For Image A, Hidden A outputs 1 and Hidden B outputs 0, so the final output is 1 ("truck-like"). Importantly, **Hidden A is not an exact "large and boxy" rule**: its first input alone can be high enough to pass the threshold. Its descriptive label is a teaching aid, not a claim about a precise logical condition.
 
 > **HAND-DRAWN DIAGRAM TODO #2 — Two-hidden-neuron network**  
 > **Caption:** A forward pass combines two inputs through two hidden neurons before making a prediction.
@@ -175,7 +175,7 @@ Our hand-calculated neurons use a **hard threshold** and output only 0 or 1. Man
 
 ### Why layers help, and what they do not promise
 
-Layers allow the network to build *combinations* of features. Hidden A gives more weight to boxiness than size; the output layer combines the hidden neurons' results. In real networks, hidden neurons usually do **not** have tidy, human-readable meanings like the simplified labels above. We invented those names to make the arithmetic understandable. What a real network learns must be investigated, not assumed.
+**Layers** allow the network to build **combinations** of features. Hidden A gives more weight to boxiness than size; the output layer combines the hidden neurons' results. In real networks, hidden neurons usually do not have tidy, human-readable meanings like the simplified labels above. We invented those names to make the arithmetic understandable. What a real network learns must be investigated, not assumed.
 
 > **Check yourself.** Which layer's output do we read as the network's prediction?
 > **Answer:** The output layer.
@@ -184,7 +184,7 @@ Layers allow the network to build *combinations* of features. Hidden A gives mor
 
 ## 5. Training Versus Inference
 
-Training and inference are two distinct activities. Understanding which one changes the model is essential.
+**Training** and **inference** are two distinct activities. Understanding which one changes the model is essential.
 
 ### Training: learning the weights
 
@@ -222,7 +222,7 @@ Re-check: (1.1 × 0.9) + (0.6 × 0.4) = 1.23 < 1.5
 New output: 0 ("not truck")
 ```
 
-That change fixes the van example. But if Image A is truly a truck, its new sum is `(1.1 × 0.8) + (0.6 × 0.6) = 1.24`, below the threshold. The model now misses Image A. **Fixing one example can create another error.** Real multilayer networks use more sophisticated learning methods; this optional calculation is only a simple illustration of feedback and adjustment.
+That change fixes the van example. But if Image A is truly a truck, its new sum is `(1.1 × 0.8) + (0.6 × 0.6) = 1.24`, below the threshold. The model now misses Image A. Fixing one example can create another error. Real multilayer networks use more sophisticated learning methods; this optional calculation is only a simple illustration of feedback and adjustment.
 
 </details>
 
@@ -257,7 +257,7 @@ The network never learned the right answer for this image. It is applying patter
 
 ### Checking whether training worked
 
-The aim of training is not simply to remember the images already seen, but to **generalize**: make useful predictions on new images. A model may perform well on its training examples and still fail on unfamiliar ones; this is one form of **overfitting**.
+The aim of training is not simply to remember the images already seen, but to **generalize:** make useful predictions on new images. A model may perform well on its training examples and still fail on unfamiliar ones; this is one form of **overfitting**.
 
 To check performance, keep some **held-out examples** out of the weight-adjustment process and evaluate the trained model on them. In our fictional case, images from different lighting conditions and camera angles help test whether a daytime-only training set will transfer to new conditions. The eight-image table in Activity B is a **teaching exercise**, not enough evidence to estimate how well a real classifier would perform across thousands of new images.
 
@@ -276,7 +276,7 @@ To check performance, keep some **held-out examples** out of the weight-adjustme
 
 ## 6. How Data Structures Connect to Neural Networks
 
-Neural networks run on numbers, and DSA gives us ways to store and move numbers.
+**Neural networks** run on numbers, and DSA gives us ways to store and move numbers.
 
 ### Arrays and matrices
 
@@ -293,7 +293,7 @@ A 3x3 grayscale image (invented brightness values, 0 = black, 255 = white)
 
 ### Keeping the input sizes consistent
 
-The **nine numbers** in the 3-by-3 pixel example above illustrate one way to represent a tiny image. Our earlier neuron calculation uses a *different*, simplified representation: **two pre-measured features**—boxiness (`0.8`) and relative size (`0.6`). The chapter assumes those two feature scores have already been provided; it does not teach an image-processing method for extracting them from pixels.
+The **nine numbers** in the 3-by-3 pixel example above illustrate one way to represent a tiny image. Our earlier neuron calculation uses a different, simplified representation: **two pre-measured features**—boxiness (`0.8`) and relative size (`0.6`). The chapter assumes those two feature scores have already been provided; it does not teach an image-processing method for extracting them from pixels.
 
 Network weights can be stored in a **matrix**. In our two-feature example, the hidden layer has two neurons, each with two incoming weights, so the weights form a **2-by-2 matrix**:
 
