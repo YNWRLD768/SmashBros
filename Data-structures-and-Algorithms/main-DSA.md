@@ -201,14 +201,7 @@ In a fixed-length array, elements of the same size are stored next to one anothe
 
 For example, imagine an array containing four fictional FBI case IDs:
 
-| Index | Case ID | Memory Address |
-|---|---|---|
-| 0 | 101 | 1000 |
-| 1 | 102 | 1004 |
-| 2 | 103 | 1008 |
-| 3 | 104 | 1012 |
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Arrays:** Draw the four-case-ID contiguous array showing indices 0–3, addresses 1000–1012, and index-2 access.
+![Arrays illustration table](../assets/Drawn/Creation_Image_1792591572896_1.png)
 
 Assume each ID occupies 4 bytes and the first element begins at address 1000.
 
@@ -279,18 +272,7 @@ Other variations exist, such as doubly linked and circular linked lists, but the
 
 The key distinction is that arrays support direct indexing, while linked lists connect nodes through references.
 
-```
-Head
- │
- ▼
-┌──────┬──────┐    ┌──────┬──────┐    ┌──────┬──────┐
-│ Data │ Next ├───>│ Data │ Next ├───>│ Data │ Null │
-├──────┼──────┤    ├──────┼──────┤    ├──────┼──────┤
-│  10  │ 0x02 │    │  20  │ 0x03 │    │  30  │ 0x00 │
-└──────┴──────┘    └──────┴──────┘    └──────┴──────┘
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Linked lists:** Draw three linked nodes with pointers and a final NULL reference, contrasting with a contiguous array.
+![linked list](../assets/Drawn/Creation_Image_1792593405528_1.png)
 
 #### Types of Linked Lists
 
