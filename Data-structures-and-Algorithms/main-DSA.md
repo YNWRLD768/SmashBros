@@ -119,7 +119,7 @@ Graphs will be explored further when introducing **Breadth-First Search (BFS)** 
 
 ### Data Structure Classification Diagram
 
-![Classification of data sructures](../assets/Drawn/Creation_Image_1792587379834_1.png) 
+![Classification of data sructures](../assets/Drawn/01.png) 
 
 
 
@@ -148,7 +148,7 @@ Although Big O is commonly used to describe worst-case complexity, it does not a
 
 For example, O(1) means the amount of work stays bounded as the input grows. It does **not** mean an operation always takes exactly the same amount of real-world time.
 
-![Big O notation](../assets/Drawn/Creation_Image_1792588303009_1.png)
+![Big O notation](../assets/Drawn/02.png)
 
 
 ### 1. Constant Time: $O(1)$
@@ -201,7 +201,7 @@ In a fixed-length array, elements of the same size are stored next to one anothe
 
 For example, imagine an array containing four fictional FBI case IDs:
 
-![Arrays illustration table](../assets/Drawn/Creation_Image_1792591572896_1.png)
+![Arrays illustration table](../assets/Drawn/03.png)
 
 Assume each ID occupies 4 bytes and the first element begins at address 1000.
 
@@ -272,7 +272,7 @@ Other variations exist, such as doubly linked and circular linked lists, but the
 
 The key distinction is that arrays support direct indexing, while linked lists connect nodes through references.
 
-![linked list](../assets/Drawn/Creation_Image_1792593405528_1.png)
+![linked list](../assets/Drawn/04.png)
 
 #### Types of Linked Lists
 
@@ -310,16 +310,8 @@ A **stack** is a linear data structure that follows the **Last-In, First-Out (LI
 
 Stacks can be implemented using arrays or linked lists. Their defining feature is the order in which items are added and removed, not whether their storage is static or dynamic.
 
-```
-        │  Data C  │  ▲ Top (Pushed Last / Popped First)
-        ├──────────┤  │
-        │  Data B  │  │
-        ├──────────┤  │
-        │  Data A  │  │ Bottom
-        └──────────┘
-```
+![stacks illustration](../assets/Drawn/05.png)
 
-> **✏️ HAND-DRAWN DIAGRAM TODO — Stack:** Illustrate A, B, C with the top labeled and push/pop arrows showing LIFO.
 
 #### FBI Example: Investigating Leads
 
@@ -373,16 +365,7 @@ In a FIFO processing queue, the records are processed in the order **A → B →
 
 **Answer:** A, because it entered the queue first.
 
-```
-               Enqueue (Insert)                             Dequeue (Remove)
-               ───────────────>                             ───────────────>
-┌────────┐    ┌────────┬────────┬────────┬────────┬────────┐    ┌────────┐
-│ Incoming│───>│ Element│ Element│ Element│ Element│ Element│───>│ Outgoing│
-└────────┘    └────────┴────────┴────────┴────────┴────────┘    └────────┘
-               Rear (Tail)                         Front (Head)
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Queue:** Draw a FIFO queue showing A, B, and C, with front/rear labels and enqueue/dequeue arrows.
+![queue diagram illustration](../assets/Drawn/06.png)
 
 #### Primary Operations
 
@@ -451,15 +434,7 @@ This module focuses on **graphs**, since they are directly connected to Breadth-
 
 A **graph** is a non-linear network structure composed of a set of vertices (or nodes) $V$ and a set of edges $E$ that connect pairs of vertices.
 
-```
-    (A) ───────────── (B)
-     │                 │
-     │                 │
-     │                 │
-    (C) ───────────── (D)
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Graph:** Draw the original four-node graph with labeled vertices A–D and undirected edges.
+![graph illustration](../assets/Drawn/07.png)
 
 #### Core Classifications
 
@@ -491,11 +466,7 @@ Hash tables provide **expected O(1) lookup** under suitable conditions, making t
 
 **Important:** Hash tables are designed for exact-key retrieval. They do not automatically recognize similar fingerprints, faces, or images.
 
-```
-Key ("John") ───> [ Hash Function ] ───> Index 3 ───> Array[3] = "555-0199"
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Hash table:** Draw key → hash function → array index → case record; include an example of a collision.
+![hash table diagram](../assets/Drawn/08.png)
 
 ---
 
@@ -634,15 +605,7 @@ Imagine an analyst searching for Case ID 91 in this unsorted list:
 
 The algorithm checks each element:
 
-| Step | Case ID Checked | Result |
-|---|---|---|
-| 1 | 42 | Not a match |
-| 2 | 17 | Not a match |
-| 3 | 65 | Not a match |
-| 4 | 28 | Not a match |
-| 5 | 91 | Match found |
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Linear search:** Draw a step-by-step search through [42, 17, 65, 28, 91] for ID 91.
+![linear search](../assets/Drawn/09.png)
 
 The algorithm requires **5 comparisons**.
 
@@ -817,16 +780,18 @@ For this example, the top of the stack is shown on the right. To visit alphabeti
 |---|---|---|
 | Start | — | [A] |
 | 1 | A | [C, B] |
-| 2 | B | [C, D] |
-| 3 | D | [C] |
-| 4 | C | [E] |
-| 5 | E | [] |
+| 2 | B | [C, E, D] |
+| 3 | D | [C, E] |
+| 4 | C | [C, F] |
+| 5 | E | [C] |
+| 6 | F | [G] |
+| 7 | G | [] |
 
-> **✏️ HAND-DRAWN DIAGRAM TODO — DFS:** Illustrate the five-node contact network and the stack state at each step of DFS.
+![dfs diagram](../assets/Drawn/10.png)
 
-**DFS Visit Order: A → B → D → C → E**
+**DFS Visit Order: A → B → D → E → F → C → G**
 
-DFS explores the A → B → D path before returning to explore C and E.
+DFS explores the A → B → D path before returning to explore E and F, then C and G.
 
 The exact visit order can change depending on which neighboring node is processed first.
 
@@ -840,7 +805,7 @@ The exact visit order can change depending on which neighboring node is processe
 | Visit order in our example | A, B, C, D, E | A, B, D, C, E |
 | Typical use | Fewest-edge paths in unweighted graphs | Exploring paths and backtracking |
 
-> **✏️ HAND-DRAWN DIAGRAM TODO — BFS vs. DFS:** Draw two versions of the five-node graph showing BFS and DFS visit order, with a queue/stack legend.
+![bfs vs dfs diagram](../assets/Drawn/11.png)
 
 Both algorithms should keep track of visited or discovered nodes to avoid repeatedly exploring the same nodes in graphs containing cycles.
 
