@@ -23,6 +23,7 @@ We have all used AI, and have seen how powerful it can be but do we really know 
 * GPS navigation 
 * Personalized marketing and many more
 
+here
 ---
 ---
 
@@ -171,11 +172,12 @@ ___
     #### 2. Decision Tree and Random Forest.
 
 * **Decision tree** is a single model, while a random forest is an ensemble model made up of many individual decision trees working together.
-
+  **here**m
 * Decision tree starts from a single node and splits it to the feature that provides the cleanest separations until it reaches a leaf node which then gives the final prediction. It is easy to visualize and kind of mimics human decision making but it is also prone to overfitting and makes up new data.
 
 * A **Random Forest** fixes the flaws of a single decision tree by creating a "forest" of many independent trees (often hundreds) and aggregating their answers. It relies on the concept that a collective crowd of average models will outperform a single "expert" model.
 
+ **Here**
     * **Bootstrapping (Bagging): -** Each tree is trained on a random sample of the rows from the dataset, sampled with replacement.
     * **Feature Randomness: -** When a tree splits a node, it is only allowed to choose from a random subset of features (columns) rather than evaluating all of them.
 
@@ -183,7 +185,7 @@ ___
 
     #### 3. Support Vector Machines (SVMs).
 
-* It seoarates different classes of data in an N-dimensional space while maximizing the distance between the classes.
+* It separates different classes of data in an N-dimensional space while maximizing the distance between the classes.
 
     * **Hyperplane: -** This is the decision boundary that divides the data classes. In a 2D space, the hyperplane is a simple line; in a 3D space, it is a 2D plane; and in higher dimensions, it becomes an N-dimensional hyperplane.
 
@@ -198,6 +200,8 @@ ___
     * So it measure the distance between the query point and every stored training example using a chosen distance metric.
 
     * It identifies the k training examples closest to the query point. And after that it will make a prediction.
+ 
+  **Here**
 
     #### 5. Gradient Boosting.
 
@@ -217,25 +221,28 @@ ___
 * **There are three algorithms for unsupervised learning.**
  ### 1. Clustering.
 
-* Clustering is a techinique in unsupervised learning where that groups unlableded data to groups based on their similarities.
+* Clustering is a technique in unsupervised learning where that groups unlabeled data to groups based on their similarities.
 
 * Its biggest job is to let us understand a data structure for a later use.
+  **Here**
 
     ### 2. Association Based Learning.
 
-* It is a techinique in unsupervised learning that is rule-based, where it finds interesting relationships between large datasets.
+* It is a technique in unsupervised learning that is rule-based, where it finds interesting relationships between large datasets.
 
-* It identifies patterns interms of if-then rules, showing how the presesnce of one implies the presence of the others.
+* It identifies patterns in-terms of if-then rules, showing how the presence of one implies the presence of the others.
 
 * So, a person is buying shoes, it is highly likely that the person will buy socks too.
+  **Here**
 
     ### 3. Dimensionality Reduction.
 
-* It is a process of decreasing the number of variables in a dataset while still retaining the original information. This method avoids redundancey and speedup computation time.
+* It is a process of decreasing the number of variables in a dataset while still retaining the original information. This method avoids redundancy and speedup computation time.
 
 * It is really helpful in spotting suspicious actions like fraud and the similar by spotting the odd one out of a dataset.
 
 * It is also really helpful in customer segmentation, where the algorithm classifies the customer base through their demographics and purchasing habits.
+  **here** why the fuck is there a pear here
 
 * **Unsupervised learning is really useful when it comes to saving time but also really challenging since the model can pickup noises rather than real data from the dataset leading to overfitting.**
 
@@ -266,10 +273,12 @@ ___
     ##                      Natural Language Processing.
 
 * Natural language processing is a field of machine learning in which machines learn to understand natural language as spoken and written by humans, instead of the data and numbers normally used to program computers. This allows machines to recognize language, understand it, and respond to it, as well as create new text and translate between languages. Natural language processing enables familiar technology like chatbots and digital assistants like Siri or Alexa.
+  **Alexa**
 
     ##                      Neural Network.
 
 * A neural network is a machine learning model that stacks simple "neurons" in layers and learns pattern-recognizing weights and biases from data to map inputs to outputs.
+  **Here**
 
 * While today’s deep neural networks (DNNs) power systems as complex as transformers and convolutional neural networks (CNNs), the origins of neural networks trace back to simple models such as linear regression and how the human brain digests, processes and decides on the information presented to it.
 
@@ -280,8 +289,10 @@ ___
 * In essence, the network learns how to transform raw features into meaningful patterns and use them to make predictions. This process is powered by two fundamental concepts: weights and biases.
 
 * **Weigths: -** Weights act like dials that control how strongly each input feature influences the decision—a word like “prize” may be given more weight than a common word like “hello.”
+  **Here**
 
 * **Biases: -** These are built-in values that influence the decision threshold allowing a neuron to activate even if the inputs are weak.
+  **Here**
 
 * Together, these model parameters determine how each neuron contributes to the overall computation. By adjusting these values during training, the network gradually learns to make accurate predictions. For example, it woll be able to determine if an email is really a phishing email or a legitimate one, that why sometimes even legitimate emails end up the smap or junk folder.
 
@@ -331,7 +342,7 @@ ___
 
 * This pinpoints where it got it wrong so it will be easier to minimize it on the next rodeo.
 
-    ###                     Tyoes Of Neural Networks.
+    ###                     Types Of Neural Networks.
 
 * **Convolutional neural networks (CNNs or convnets): -** Designed for grid-like data such as images. CNNs excel at image recognition, computer vision and facial recognition thanks to convolutional filters that detect spatial hierarchies of features. 
 
@@ -467,12 +478,14 @@ weighted sum = (2 x 0.2) + (1 x 0.3) = 0.4 + 0.3 = 0.7
 
 The neuron gave more influence to the boxy-rear feature (weight 2) than to size (weight 1). Changing the weights changes the behavior, and as we will see, *learning means finding good weights*.
 
-> **HAND-DRAWN DIAGRAM TODO #1 — One artificial neuron**  
-> **Caption:** Two numerical features enter a threshold neuron and produce a toy yes/no output.
->
-> - Show inputs `x1 = 0.8` (boxiness) and `x2 = 0.6` (size), with arrows weighted `w1 = 2` and `w2 = 1`.
-> - Show the neuron adding `2 × 0.8 + 1 × 0.6 = 2.2` and checking threshold `1.5`.
-> - Label the single outgoing arrow `output = 1` ("truck-like").
+<!-- **HAND-DRAWN DIAGRAM TODO #1 — One artificial neuron** 
+**Caption:** Two numerical features enter a threshold neuron and produce a toy yes/no output.
+
+Show inputs `x1 = 0.8` (boxiness) and `x2 = 0.6` (size), with arrows weighted `w1 = 2` and `w2 = 1`.
+Show the neuron adding `2 × 0.8 + 1 × 0.6 = 2.2` and checking threshold `1.5`.
+Label the single outgoing arrow `output = 1` ("truck-like"). -->
+
+**here**
 
 ### A note on bias
 
@@ -481,6 +494,8 @@ Many descriptions rewrite the threshold as an extra number called the **bias par
 ### Neuron versus biological neuron
 
 A **biological neuron** is a living cell with chemistry and structure far richer than a weighted sum. The artificial neuron borrows one *idea* (many signals combine, and the result is passed on) and turns it into arithmetic. Calling it "a tiny brain cell" is a metaphor, not a description.
+
+**here**
 
 > **Check yourself.** In the example, what happens to Image A's output if `w1` is changed from 2 to 0.5?
 > **Answer:** The sum becomes (0.5 x 0.8) + (1 x 0.6) = 1.0, which is below 1.5, so the output becomes 0. A weight change flipped the decision.
@@ -509,13 +524,15 @@ We reuse Image A (`x1 = 0.8`, `x2 = 0.6`) and add a hidden layer of two neurons 
 
 The output neuron receives the **outputs of the hidden neurons**, not the original input numbers directly. For Image A, Hidden A outputs 1 and Hidden B outputs 0, so the final output is 1 ("truck-like"). Importantly, **Hidden A is not an exact "large and boxy" rule**: its first input alone can be high enough to pass the threshold. Its descriptive label is a teaching aid, not a claim about a precise logical condition.
 
-> **HAND-DRAWN DIAGRAM TODO #2 — Two-hidden-neuron network**  
-> **Caption:** A forward pass combines two inputs through two hidden neurons before making a prediction.
->
-> - Draw input circles `x1 = 0.8`, `x2 = 0.6`; hidden circles A and B; and one output circle, "Truck?".
-> - Label all input-to-hidden weights (A: `2, 1`; B: `1, -1`) and hidden-to-output weights (`1, -1`).
-> - For Image A, label hidden sums and outputs `2.2 → 1`, `0.2 → 0`, and final output `1`; add a left-to-right "forward pass" arrow.
-> - Keep the neuron names neutral: neither hidden neuron is an exact logical AND rule.
+<!-- **HAND-DRAWN DIAGRAM TODO #2 — Two-hidden-neuron network**  
+**Caption:** A forward pass combines two inputs through two hidden neurons before making a prediction.
+
+- Draw input circles `x1 = 0.8`, `x2 = 0.6`; hidden circles A and B; and one output circle, "Truck?".
+- Label all input-to-hidden weights (A: `2, 1`; B: `1, -1`) and hidden-to-output weights (`1, -1`).
+- For Image A, label hidden sums and outputs `2.2 → 1`, `0.2 → 0`, and final output `1`; add a left-to-right "forward pass" arrow.
+- Keep the neuron names neutral: neither hidden neuron is an exact logical AND rule. -->
+
+**here**
 
 ### A second forward pass: when both hidden neurons activate
 
@@ -549,6 +566,8 @@ Our hand-calculated neurons use a **hard threshold** and output only 0 or 1. Man
 ### Training: learning the weights
 
 In our **supervised learning** example, **training** means adjusting model parameters using **labeled examples**. A **labeled example** pairs an input with a reference answer, often supplied by a human reviewer. In Harbor-17, that is an image or its numerical features paired with "truck" or "not truck". Other types of machine learning exist, but supervised classification is our focus.
+
+**Here**
 
 The main idea is a repeating loop:
 
@@ -586,12 +605,14 @@ That change fixes the van example. But if Image A is truly a truck, its new sum 
 
 </details>
 
-> **HAND-DRAWN DIAGRAM TODO #3 — Training loop**  
-> **Caption:** A labeled example gives the model feedback that can guide weight changes.
->
-> - Draw four connected boxes: `Predict → Compare → Adjust → Repeat`, with an arrow looping back to Predict.
-> - Show a small fictional van image and its reference label `not truck` beside the Compare step.
-> - Mark weight adjustment as occurring in **training**, not during ordinary inference; leave the detailed numbers for the optional box.
+<!-- **HAND-DRAWN DIAGRAM TODO #3 — Training loop**  
+**Caption:** A labeled example gives the model feedback that can guide weight changes.
+
+- Draw four connected boxes: `Predict → Compare → Adjust → Repeat`, with an arrow looping back to Predict.
+- Show a small fictional van image and its reference label `not truck` beside the Compare step.
+- Mark weight adjustment as occurring in **training**, not during ordinary inference; leave the detailed numbers for the optional box. -->
+
+**here**
 
 ### Inference: using the learned weights
 
@@ -672,13 +693,15 @@ Hidden B sum: (1 x 0.8) - (1 x 0.6)  = 0.2
 
 Doing these weighted sums in an organized group is one reason arrays and matrices are useful. Practical neural networks can store very large numbers of parameters in multidimensional arrays.
 
-> **HAND-DRAWN DIAGRAM TODO #4 — Pixel values and feature arrays**  
-> **Caption:** A pixel grid and a two-feature input are different representations with different weight requirements.
->
-> - Show a `3 × 3` grayscale grid flattened into **9 pixel values**.
-> - Add a **dashed, explicitly assumed** step: "two features were already measured," leading to `boxiness = 0.8` and `size = 0.6`.
-> - Connect those two values to a `2 × 2` weight grid, then to weighted sums `2.2` and `0.2`.
-> - Label the distinction: **nine direct pixel inputs would need nine weights per neuron**, not two.
+<!--**HAND-DRAWN DIAGRAM TODO #4 — Pixel values and feature arrays**  
+**Caption:** A pixel grid and a two-feature input are different representations with different weight requirements.
+
+- Show a `3 × 3` grayscale grid flattened into **9 pixel values**.
+- Add a **dashed, explicitly assumed** step: "two features were already measured," leading to `boxiness = 0.8` and `size = 0.6`.
+- Connect those two values to a `2 × 2` weight grid, then to weighted sums `2.2` and `0.2`.
+- Label the distinction: **nine direct pixel inputs would need nine weights per neuron**, not two. -->
+
+**here**
 
 ### What the earlier DSA tools do and do not do
 
