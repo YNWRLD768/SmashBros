@@ -148,7 +148,7 @@ Although Big O is commonly used to describe worst-case complexity, it does not a
 
 For example, O(1) means the amount of work stays bounded as the input grows. It does **not** mean an operation always takes exactly the same amount of real-world time.
 
-![Big O notation](../assets/Drawn/Creation_Image_1792588303009_1.png)
+![Big O notation](../assets/Image_2026_10_23_15.39.38.1.jpeg)
 
 
 ### 1. Constant Time: $O(1)$
