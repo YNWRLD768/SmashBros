@@ -272,7 +272,7 @@ Other variations exist, such as doubly linked and circular linked lists, but the
 
 The key distinction is that arrays support direct indexing, while linked lists connect nodes through references.
 
-![linked list](../assets/Drawn/Creation_Image_1792593405528_1.png)
+![linked list](../assets/Image_2026_10_23_15.39.37.1.jpeg)
 
 #### Types of Linked Lists
 
