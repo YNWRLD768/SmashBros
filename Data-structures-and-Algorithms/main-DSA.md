@@ -433,15 +433,7 @@ This module focuses on **graphs**, since they are directly connected to Breadth-
 
 A **graph** is a non-linear network structure composed of a set of vertices (or nodes) $V$ and a set of edges $E$ that connect pairs of vertices.
 
-```
-    (A) ───────────── (B)
-     │                 │
-     │                 │
-     │                 │
-    (C) ───────────── (D)
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Graph:** Draw the original four-node graph with labeled vertices A–D and undirected edges.
+![Graphs example](../assets/Image_20261023160704_201_156.jpg)
 
 #### Core Classifications
 
