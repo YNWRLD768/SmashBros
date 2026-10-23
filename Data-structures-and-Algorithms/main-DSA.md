@@ -602,15 +602,7 @@ Imagine an analyst searching for Case ID 91 in this unsorted list:
 
 The algorithm checks each element:
 
-| Step | Case ID Checked | Result |
-|---|---|---|
-| 1 | 42 | Not a match |
-| 2 | 17 | Not a match |
-| 3 | 65 | Not a match |
-| 4 | 28 | Not a match |
-| 5 | 91 | Match found |
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Linear search:** Draw a step-by-step search through [42, 17, 65, 28, 91] for ID 91.
+![Search case example](../assets/Image_20261023160713_203_156.jpg)
 
 The algorithm requires **5 comparisons**.
 
