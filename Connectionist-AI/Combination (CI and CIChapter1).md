@@ -23,7 +23,7 @@ We have all used AI, and have seen how powerful it can be but do we really know 
 * GPS navigation 
 * Personalized marketing and many more
 
-here
+![thumbnail](../assets/mmexport1792743985589.jpg)
 ---
 ---
 
@@ -41,8 +41,8 @@ here
 ---
 | AI | A Child |
 | --- | --- |
-| *Given a massive amount of data to amke it remember* | *Exposed to an environment of people and materials* |
-| *Decrease or increase the volume based on performance* | *Given postive reinforcement evrytime it does something good* |
+| *Given a massive amount of data to make it remember* | *Exposed to an environment of people and materials* |
+| *Decrease or increase the volume based on performance* | *Given positive reinforcement every time it does something good* |
 
 * Modern LLMs (large language models), like ChatGPT, use what's called reinforcement learning from human feedback, RLHF, to train a reward model which then is used to train the language model.
 
@@ -56,11 +56,11 @@ here
 
 * Weak AI, or Artificial Narrow Intelligence (ANI), refers to those systems that are designed to perform specific tasks or solve particular problems within a defined scope—they cannot think or make decisions beyond them. Unlike humans, who can apply intelligence across different situations, Narrow AI operates under set constraints without general cognitive abilities.
 
-* A great exaple would be the algorithm that recommends us the videos we watch.
+* A great example would be the algorithm that recommends us the videos we watch.
 
     ##                      2. General AI(Strong AI),
 
-* Unlike the previous one, this one posseses the ability to think to apply previous information to a new situation it stumbles on.
+* Unlike the previous one, this one possesses the ability to think to apply previous information to a new situation it stumbles on.
 
 * The amusing thing is still a concept and hasn't been made yet.
 
@@ -72,7 +72,7 @@ here
 
 ---
 
-* Also we classify AI based on fuctionalities, as: -
+* Also we classify AI based on functionalities, as: -
 
     ##                      1. Reactive Machines.
 
@@ -94,7 +94,7 @@ here
 
     ##                      4. Self-Aware AI.
 
-* This a stage of AI that we see in movies or read about in books, where an AI model would possess cosciousness.
+* This a stage of AI that we see in movies or read about in books, where an AI model would possess consciousness.
 ___
 ___
 
@@ -104,11 +104,11 @@ ___
 
 * Pre training is the initial, large-scale learning phase in which a model is trained on massive, general-purpose datasets-such as text, images, audio, or video-to learn broad patterns and representations. This phase draws heavily on advances in machine learning theory and large-scale distributed systems.
 
-* At this stage the AI gets the basic knowledge it has, such as understanding different languages, recognizing images, and it will be able to identify any relationship between datas. This stage looks a lot like how child grows into his/her environment.
+* At this stage the AI gets the basic knowledge it has, such as understanding different languages, recognizing images, and it will be able to identify any relationship between data. This stage looks a lot like how child grows into his/her environment.
 
 * This stage is resource-intensive and only done once to build the foundation or the base. 
 
-* At this stage the AI can do most of the things it is suppose to do, and one of maybe the most usefull ones is, token-prediction, where the AI predicts the next word or character helping the process be faster.
+* At this stage the AI can do most of the things it is suppose to do, and one of maybe the most useful ones is, token-prediction, where the AI predicts the next word or character helping the process be faster.
 
     ##                                     2. Post - Training Phase.
 
@@ -116,7 +116,7 @@ ___
 
 * The AI is given human-crafted prompts to tune its conversation capability and safety.
 
-* If pretraining is like teaching a model foundational skills in school, post-training is job training. For example, a large language model can be post-trained to perform sentiment analysis, translation, or understanding of domain-specific language in fields like healthcare, law, or finance.
+* If pre-training is like teaching a model foundational skills in school, post-training is job training. For example, a large language model can be post-trained to perform sentiment analysis, translation, or understanding of domain-specific language in fields like healthcare, law, or finance.
 
     ##                                     3. Reinforcement Learning From Human Feedback(RLHF).
 
@@ -133,7 +133,7 @@ ___
 
 * The machine learns mapping first where it maps the input and the outputs using a mathematical expression y=f(x), to map inputs "x" to outputs "y".
 
-* The model compares its predictions against the ground truth lables and adjusts its internal parameters to minimize errors. We call this error adjustment.
+* The model compares its predictions against the ground truth labels and adjusts its internal parameters to minimize errors. We call this error adjustment.
 
 * After this training is done the model uses its learned relations ships to predict and produce an output for a new, unseen data. We call this generalization.
 
@@ -146,9 +146,9 @@ ___
 
 * This predicts categorical discrete labels (male vs female, dog vs cat).
 
-* When there are only two possible classes, we call it binary classification, when there is more than two classes we call it, multiclass classification.
+* When there are only two possible classes, we call it binary classification, when there is more than two classes we call it, multi-class classification.
 
-* We use classification in email spam detection, image and object recognition and etcetra.
+* We use classification in email spam detection, image and object recognition and etcetera.
 
 * As an example of supervised learning, consider an image classification model created to recognize images of vehicles and determine which type of vehicle they are. Such a model can power the CAPTCHA tests many websites use to detect spam bots.
 
@@ -158,9 +158,9 @@ ___
 
 * So basically its main goal is to predict a value or a quantity.
 
-* It predicts and produces and value for a house price and salaries, etcetra.
+* It predicts and produces and value for a house price and salaries, etcetera.
 
-* Supervised learning uses multiple alogorithms, those are : -
+* Supervised learning uses multiple algorithms, those are : -
 
     #### 1. Linear and Logistic Regressions.
 
@@ -172,12 +172,13 @@ ___
     #### 2. Decision Tree and Random Forest.
 
 * **Decision tree** is a single model, while a random forest is an ensemble model made up of many individual decision trees working together.
-  **here**m
+![decision tree](../assets/images.png)
+
 * Decision tree starts from a single node and splits it to the feature that provides the cleanest separations until it reaches a leaf node which then gives the final prediction. It is easy to visualize and kind of mimics human decision making but it is also prone to overfitting and makes up new data.
 
 * A **Random Forest** fixes the flaws of a single decision tree by creating a "forest" of many independent trees (often hundreds) and aggregating their answers. It relies on the concept that a collective crowd of average models will outperform a single "expert" model.
+![random forest](../assets/1_HO7OUBuwpTHswE3NTs47Fg.png)
 
- **Here**
     * **Bootstrapping (Bagging): -** Each tree is trained on a random sample of the rows from the dataset, sampled with replacement.
     * **Feature Randomness: -** When a tree splits a node, it is only allowed to choose from a random subset of features (columns) rather than evaluating all of them.
 
@@ -200,14 +201,13 @@ ___
     * So it measure the distance between the query point and every stored training example using a chosen distance metric.
 
     * It identifies the k training examples closest to the query point. And after that it will make a prediction.
- 
-  **Here**
+    ![k-nearest neighbour](<../assets/images (1).png>)
 
     #### 5. Gradient Boosting.
 
-    * It builds a sequential models to fix the errors prior iteriations.
+    * It builds a sequential models to fix the errors prior iterations.
 
-    * Basically this builds a strong predictive model by leaving the errors and mistakes(psudo-residuals) of the previous model.
+    * Basically this builds a strong predictive model by leaving the errors and mistakes(pseudo-residuals) of the previous model.
 
     ## Unsupervised Learning.
 
@@ -216,7 +216,7 @@ ___
 
 * Unlike supervised learning, in unsupervised learning an algorithm is made to find hidden patterns and relationships based on inherent similarities or even differences.
 
-* The algorithm is given a massive amount of data, without any predefined lables or categories. After that, the algorithm looks for small intricit similarities or hidden patterns within the given set of data so it can match them.
+* The algorithm is given a massive amount of data, without any predefined labels or categories. After that, the algorithm looks for small intricate similarities or hidden patterns within the given set of data so it can match them.
 
 * **There are three algorithms for unsupervised learning.**
  ### 1. Clustering.
@@ -224,7 +224,7 @@ ___
 * Clustering is a technique in unsupervised learning where that groups unlabeled data to groups based on their similarities.
 
 * Its biggest job is to let us understand a data structure for a later use.
-  **Here**
+![clustering](../assets/Clustering_Data.png)
 
     ### 2. Association Based Learning.
 
@@ -233,7 +233,9 @@ ___
 * It identifies patterns in-terms of if-then rules, showing how the presence of one implies the presence of the others.
 
 * So, a person is buying shoes, it is highly likely that the person will buy socks too.
-  **Here**
+![association based learning](../assets/mmexport1792743999844.jpg)
+
+    The image above shows an example of the application of association based learning in an app. In this case, **Taobao** creates a system that gives the user relevant items based on the one they are interested in. 
 
     ### 3. Dimensionality Reduction.
 
@@ -242,7 +244,7 @@ ___
 * It is really helpful in spotting suspicious actions like fraud and the similar by spotting the odd one out of a dataset.
 
 * It is also really helpful in customer segmentation, where the algorithm classifies the customer base through their demographics and purchasing habits.
-  **here** why the fuck is there a pear here
+![why the f is there a pear here?](../assets/lda.jpeg)
 
 * **Unsupervised learning is really useful when it comes to saving time but also really challenging since the model can pickup noises rather than real data from the dataset leading to overfitting.**
 
@@ -256,11 +258,11 @@ ___
 
 * The central premise of machine learning (ML) is that if you optimize a model’s performance on a dataset of tasks that adequately resemble the real-world problems it will be used for—through a process called model training—the model can make accurate predictions on the new data it sees in its ultimate use case.
 
-* Nowadays many AI models are used for extensive kind of things from really useful tasks to weridly as "companions", this is where ML comes in handy.
+* Nowadays many AI models are used for extensive kind of things from really useful tasks to weirdly as "companions", this is where ML comes in handy.
 
 * Training itself is simply a means to an end: generalization, the translation of strong performance on training data to useful results in real-world scenarios, is the fundamental goal of machine learning. In essence, a trained model is applying patterns it learned from training data to infer the correct output for a real-world task: the deployment of an AI model is therefore called AI inference.
 
-* **AI Inference: -** Is the operatioanl phase where an AI model processes a new unseen data to generate real time predictions, classifiactions or texts. This is explained extensively above.
+* **AI Inference: -** Is the operational phase where an AI model processes a new unseen data to generate real time predictions, classifications or texts. This is explained extensively above.
 
 * Machine learning is also associated with several other artificial intelligence subfields: -
 
@@ -268,19 +270,19 @@ ___
 
 * It is a specialized subset of machine learning that uses multilayered artificial neural networks to automatically learn complex patterns and representations from raw, unstructured data.
 
-* The term **"Deep"** refers to the multitiude of hidden layers used, ranging from three to hundreds to thousands that allow computersto solve intricate problems without manual feature engineering.
+* The term **"Deep"** refers to the multitude of hidden layers used, ranging from three to hundreds to thousands that allow computers to solve intricate problems without manual feature engineering.
 
     ##                      Natural Language Processing.
 
-* Natural language processing is a field of machine learning in which machines learn to understand natural language as spoken and written by humans, instead of the data and numbers normally used to program computers. This allows machines to recognize language, understand it, and respond to it, as well as create new text and translate between languages. Natural language processing enables familiar technology like chatbots and digital assistants like Siri or Alexa.
-  **Alexa**
+* Natural language processing is a field of machine learning in which machines learn to understand natural language as spoken and written by humans, instead of the data and numbers normally used to program computers. This allows machines to recognize language, understand it, and respond to it, as well as create new text and translate between languages. Natural language processing enables familiar technology like Chatbots and digital assistants like Siri or Alexa.
+![alexa](../assets/smartspeakers-2048px-echospot.jpg)
 
     ##                      Neural Network.
 
 * A neural network is a machine learning model that stacks simple "neurons" in layers and learns pattern-recognizing weights and biases from data to map inputs to outputs.
-  **Here**
+![neural network](../assets/62dc0501-8dda-4bd7-9ba9-fa1a9b8c7cb4-l.jpg)
 
-* While today’s deep neural networks (DNNs) power systems as complex as transformers and convolutional neural networks (CNNs), the origins of neural networks trace back to simple models such as linear regression and how the human brain digests, processes and decides on the information presented to it.
+* While today’s deep neural networks (DNNs) power systems as complex as transformers and convolution neural networks (CNNs), the origins of neural networks trace back to simple models such as linear regression and how the human brain digests, processes and decides on the information presented to it.
 
 * On a high level, the inspiration for neural networks comes from the biological neurons in the human brain, which communicate through electrical signals.
 
@@ -288,18 +290,18 @@ ___
 
 * In essence, the network learns how to transform raw features into meaningful patterns and use them to make predictions. This process is powered by two fundamental concepts: weights and biases.
 
-* **Weigths: -** Weights act like dials that control how strongly each input feature influences the decision—a word like “prize” may be given more weight than a common word like “hello.”
-  **Here**
+* **Weights: -** Weights act like dials that control how strongly each input feature influences the decision—a word like “prize” may be given more weight than a common word like “hello.”
+![weights](../assets/0_8whNUtmL6VIueydp.png)
 
 * **Biases: -** These are built-in values that influence the decision threshold allowing a neuron to activate even if the inputs are weak.
-  **Here**
+![biases](../assets/68d15da9135586b01fd081ef_ee4f3802.png)
 
-* Together, these model parameters determine how each neuron contributes to the overall computation. By adjusting these values during training, the network gradually learns to make accurate predictions. For example, it woll be able to determine if an email is really a phishing email or a legitimate one, that why sometimes even legitimate emails end up the smap or junk folder.
+* Together, these model parameters determine how each neuron contributes to the overall computation. By adjusting these values during training, the network gradually learns to make accurate predictions. For example, it will be able to determine if an email is really a phishing email or a legitimate one, that why sometimes even legitimate emails end up the spam or junk folder.
 
-* A neural netwrok is composed of: -
+* A neural network is composed of: -
 
      **Input Layer: -** This holds the raw features.
-     **Hidden Layes: -** Consists of artificial neurons (or nodes) that transform inputs into new representations. This is where the linear transformation between input and output happens.
+     **Hidden Layers: -** Consists of artificial neurons (or nodes) that transform inputs into new representations. This is where the linear transformation between input and output happens.
      **Output Layer: -** After performing the linear transformation in the hidden layer, a final prediction is made.
 
 * A neural network has a "neuron" for each input (each of the pixels of the images) and a neuron for each output (each of the 10 possible digits).
@@ -308,11 +310,11 @@ ___
 
 * So, the connection between the pixel and the zero is weighted low, and is weighted something higher for the rest of the outputs.
 
-* The real beauty of machine learning is that we let it figure stuff out and if it correctly guesses or predicts, we give it some kind of reinforcement, slightly increasing those weigthed votes, and if it gets it wrong we correct it so it can lower those weighted votes.
+* The real beauty of machine learning is that we let it figure stuff out and if it correctly guesses or predicts, we give it some kind of reinforcement, slightly increasing those weighted votes, and if it gets it wrong we correct it so it can lower those weighted votes.
 
-* The different thing about Neural Nework is, we can actually ramp it up, unlike the other learning approaches, by increasing the number of hidden layers which basically means adding more computing resources to it.
+* The different thing about Neural Network is, we can actually ramp it up, unlike the other learning approaches, by increasing the number of hidden layers which basically means adding more computing resources to it.
 
-* The downside lies on the complexity of the result they give us, it is a complext combination of numbers which can lead a person to solve a problem they don't understand, with a solution that they don't understand.
+* The downside lies on the complexity of the result they give us, it is a complex combination of numbers which can lead a person to solve a problem they don't understand, with a solution that they don't understand.
 
 *   But for a model to learn from data it need three core steps: -
 
@@ -320,31 +322,31 @@ ___
 
 *   Data flows forward from the input layer, through hidden layers, to the output layer.
 
-*   So first the model performs **Linear Combiantion**, where each neuron calculates a weighted sums of the inputs and adds the bias.
+*   So first the model performs **Linear Combination**, where each neuron calculates a weighted sums of the inputs and adds the bias.
 
-*   Then it performs **Activation Function**, where a non-linear function like the ReLU, Sigmoid or Tanh are added to the sum to introuduce non-linearity and generate the neuron's output (activation).
+*   Then it performs **Activation Function**, where a non-linear function like the ReLU, Sigmoid or Tanh are added to the sum to introduce non-linearity and generate the neuron's output (activation).
 
 | ReLu | Sigmoid | Tanh |
 | :--- | :--- | :--- |
-| Outputs the input directly if it is positive, if not the output is zero. | Compresses real valued numbers into probability-like scale between 0 and 1. | Concentrarted the value around zero in an shaped curve so it will be easier for weight updates, since the convergence will be around zero. |
+| Outputs the input directly if it is positive, if not the output is zero. | Compresses real valued numbers into probability-like scale between 0 and 1. | Concentrated the value around zero in an shaped curve so it will be easier for weight updates, since the convergence will be around zero. |
 
-* Lastly, it gives us a **Final Output**, where the process repeats again and again until the final layer produces a predicition.
+* Lastly, it gives us a **Final Output**, where the process repeats again and again until the final layer produces a prediction.
 
     ###                     2. Loss Calculation.
 
-* This is the stage where error measurment is performed. At this stage the model measures compares its predicted output( let's call it y') to the true target output(y) using a loss function or cost function to quantify its deviation from the true output or how wrong it is.
+* This is the stage where error measurement is performed. At this stage the model measures compares its predicted output( let's call it y') to the true target output(y) using a loss function or cost function to quantify its deviation from the true output or how wrong it is.
 
 * The entire training objective is to minimize this loss value.
 
     ###                     3. Backpropagation.
 
-* At thi stage what happnes is backpropagation moves backwards to see how much each weight and bias contributed to the error.
+* At thi stage what happens is backpropagation moves backwards to see how much each weight and bias contributed to the error.
 
 * This pinpoints where it got it wrong so it will be easier to minimize it on the next rodeo.
 
     ###                     Types Of Neural Networks.
 
-* **Convolutional neural networks (CNNs or convnets): -** Designed for grid-like data such as images. CNNs excel at image recognition, computer vision and facial recognition thanks to convolutional filters that detect spatial hierarchies of features. 
+* **Convolutional neural networks (CNNs or convents): -** Designed for grid-like data such as images. CNNs excel at image recognition, computer vision and facial recognition thanks to convolutional filters that detect spatial hierarchies of features. 
 
 * **Recurrent neural networks (RNNs): -** Incorporate feedback loops that allow information to persist across time steps. RNNs are well-suited for speech recognition, time series forecasting and sequential data. 
 
@@ -360,12 +362,12 @@ ___
 
 * As we mentioned above models also train via backpropagation which is really useful in detecting mistakes by literally back-tracking and trying to pinpoint them.
 
-* But one of teach and money savy operation is: - **Hardware Acceleration,** it is basically using massive amounts of specialized GPUs and processors to perform tasks that are repetative and making the process of the neural netwrok faster than standard CPUs.
+* But one of teach and money savy operation is: - **Hardware Acceleration,** it is basically using massive amounts of specialized GPUs and processors to perform tasks that are repetitive and making the process of the neural network faster than standard CPUs.
 
 * This process is really important in speeding up processes like forward propagation, loss calculation and backproagation since they need to be done million, if not billions of times.
 
 
-* Now lets get to the fun part, have you ever imagined how an AI models approaches human intelligence. It is all about mimicking the human brain but not about replecating it, so there must be a way or two or even three to mimic human intelligence, however great it is. The next part walks us through one of the approaches a model mimic human intelligence.
+* Now lets get to the fun part, have you ever imagined how an AI models approaches human intelligence. It is all about mimicking the human brain but not about replicating it, so there must be a way or two or even three to mimic human intelligence, however great it is. The next part walks us through one of the approaches a model mimic human intelligence.
 
 # **Chapter 4**
 
@@ -485,7 +487,7 @@ Show inputs `x1 = 0.8` (boxiness) and `x2 = 0.6` (size), with arrows weighted `w
 Show the neuron adding `2 × 0.8 + 1 × 0.6 = 2.2` and checking threshold `1.5`.
 Label the single outgoing arrow `output = 1` ("truck-like"). -->
 
-**here**
+![one artificial neuron](../assets/Threshold%20Neuron%20Truck%20Classification.png)
 
 ### A note on bias
 
@@ -495,7 +497,7 @@ Many descriptions rewrite the threshold as an extra number called the **bias par
 
 A **biological neuron** is a living cell with chemistry and structure far richer than a weighted sum. The artificial neuron borrows one *idea* (many signals combine, and the result is passed on) and turns it into arithmetic. Calling it "a tiny brain cell" is a metaphor, not a description.
 
-**here**
+![neuron vs bio neuron](../assets/1SgJPlfKHwL-qis-aL19Fyg.png)
 
 > **Check yourself.** In the example, what happens to Image A's output if `w1` is changed from 2 to 0.5?
 > **Answer:** The sum becomes (0.5 x 0.8) + (1 x 0.6) = 1.0, which is below 1.5, so the output becomes 0. A weight change flipped the decision.
@@ -532,7 +534,7 @@ The output neuron receives the **outputs of the hidden neurons**, not the origin
 - For Image A, label hidden sums and outputs `2.2 → 1`, `0.2 → 0`, and final output `1`; add a left-to-right "forward pass" arrow.
 - Keep the neuron names neutral: neither hidden neuron is an exact logical AND rule. -->
 
-**here**
+![two hidden neuron network](../assets/3b09a48e222fd65457006931b5a771aa487ffb09d42d6a015b026cf9342c4539.png)
 
 ### A second forward pass: when both hidden neurons activate
 
@@ -567,7 +569,7 @@ Our hand-calculated neurons use a **hard threshold** and output only 0 or 1. Man
 
 In our **supervised learning** example, **training** means adjusting model parameters using **labeled examples**. A **labeled example** pairs an input with a reference answer, often supplied by a human reviewer. In Harbor-17, that is an image or its numerical features paired with "truck" or "not truck". Other types of machine learning exist, but supervised classification is our focus.
 
-**Here**
+![training learning with weights](../assets/Supervised%20Learning%20Infographic.png)
 
 The main idea is a repeating loop:
 
@@ -612,7 +614,7 @@ That change fixes the van example. But if Image A is truly a truck, its new sum 
 - Show a small fictional van image and its reference label `not truck` beside the Compare step.
 - Mark weight adjustment as occurring in **training**, not during ordinary inference; leave the detailed numbers for the optional box. -->
 
-**here**
+![training loop](../assets/5f4453abc19d0783adc4968c1c47158f2546268f145001e51b00fd1e17cdb48d.png)
 
 ### Inference: using the learned weights
 
@@ -662,10 +664,10 @@ To check performance, keep some **held-out examples** out of the weight-adjustme
 ### Arrays and matrices
 
 - An **array** is an ordered list of values. The feature list `[0.8, 0.6]` is an array.
-- A **matrix** is a grid of values arranged in rows and columns. A tiny grayscale image *is* a matrix, because each cell holds a brightness number.
+- A **matrix** is a grid of values arranged in rows and columns. A tiny gray-scale image *is* a matrix, because each cell holds a brightness number.
 
 ```text
-A 3x3 grayscale image (invented brightness values, 0 = black, 255 = white)
+A 3x3 gray-scale image (invented brightness values, 0 = black, 255 = white)
 
   [  12  200  198 ]
   [  15  210  205 ]    -> can be "flattened" into an array of 9 numbers
@@ -696,12 +698,12 @@ Doing these weighted sums in an organized group is one reason arrays and matrice
 <!--**HAND-DRAWN DIAGRAM TODO #4 — Pixel values and feature arrays**  
 **Caption:** A pixel grid and a two-feature input are different representations with different weight requirements.
 
-- Show a `3 × 3` grayscale grid flattened into **9 pixel values**.
+- Show a `3 × 3` gray-scale grid flattened into **9 pixel values**.
 - Add a **dashed, explicitly assumed** step: "two features were already measured," leading to `boxiness = 0.8` and `size = 0.6`.
 - Connect those two values to a `2 × 2` weight grid, then to weighted sums `2.2` and `0.2`.
 - Label the distinction: **nine direct pixel inputs would need nine weights per neuron**, not two. -->
 
-**here**
+![pixel values and feature arrays](../assets/ba8c24c1feec2e64cee5977ce00316c5d4af54ba9c7f17b4a94bba8c52d767a7.png)
 
 ### What the earlier DSA tools do and do not do
 
