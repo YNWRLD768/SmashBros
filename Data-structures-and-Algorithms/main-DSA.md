@@ -119,7 +119,7 @@ Graphs will be explored further when introducing **Breadth-First Search (BFS)** 
 
 ### Data Structure Classification Diagram
 
-![Classification of data sructures](../assets/Drawn/Creation_Image_1792587379834_1.png) 
+![Classification of data sructures](../assets/Image_2026_10_23_15.39.39.jpeg)
 
 
 
