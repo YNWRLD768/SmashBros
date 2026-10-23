@@ -395,37 +395,9 @@ Two examples are **trees** and **graphs**.
 
 This module focuses on **graphs**, since they are directly connected to Breadth-First Search (BFS) and Depth-First Search (DFS). Detailed tree structures are outside our scope.
 
-```
-                     ┌──────────┐
-                     │  Root    │  (Level 0)
-                     └────┬─────┘
-             ┌────────────┴────────────┐
-             ▼                         ▼
-       ┌──────────┐              ┌──────────┐
-       │ Node A   │              │ Node B   │  (Level 1)
-       └────┬─────┘              └────┬─────┘
-     ┌──────┴──────┐                  │
-     ▼             ▼                  ▼
-┌──────────┐  ┌──────────┐      ┌──────────┐
-│ Leaf C   │  │ Leaf D   │      │ Leaf E   │  (Level 2)
-└──────────┘  └──────────┘      └──────────┘
-```
+![Trees example](../assets/Image_20261023165343_212_156.jpg)
 
-```
-                     ┌──────────┐
-                     │    50    │
-                     └────┬─────┘
-             ┌────────────┴────────────┐
-             ▼                         ▼
-       ┌──────────┐              ┌──────────┐
-       │    30    │              │    70    │
-       └────┬─────┘              └────┬─────┘
-     ┌──────┴──────┐            ┌──────┴──────┐
-     ▼             ▼            ▼             ▼
-┌──────────┐  ┌──────────┐ ┌──────────┐  ┌──────────┐
-│    20    │  │    40    │ │    60    │  │    80    │
-└──────────┘  └──────────┘ └──────────┘  └──────────┘
-```
+![trees example 2](../assets/Image_20261023165341_211_156.jpg)
 
 ---
 
@@ -485,22 +457,13 @@ A good hash function helps make lookup efficient, but it cannot guarantee that c
 
 A **collision** occurs when two distinct keys generate the exact same array index.
 
-```
-Key 1 ("Alice") ──┐
-                  ├─> [ Hash Function ] ──> Index 5  (COLLISION!)
-Key 2 ("Bob")   ──┘
-```
+![Collision resolution](../assets/Image_20261023165414_215_156.jpg)
 
 ### 1. Chaining (Open Hashing)
 
 Each array slot holds a pointer to a singly linked list. When keys collide, the new key-value pair is appended to the linked list at that specific index.
 
-```
-Index 0:
-Index 1: [ KeyA | ValA ] ──> [ KeyB | ValB ] ──> Null
-Index 2:
-Index 3: [ KeyC | ValC ] ──> Null
-```
+![Chaining](../assets/Image_20261023165411_214_156.jpg)
 
 ### Understanding Collisions
 
@@ -510,13 +473,7 @@ One simple solution is **chaining**, where multiple key-value pairs are stored t
 
 For example:
 
-```text
-Index 0: Empty
-Index 1: [101 → Case A] → [106 → Case B]
-Index 2: Empty
-Index 3: Empty
-Index 4: Empty
-```
+![Understanding collisions](../assets/Image_20261023165408_213_156.jpg)
 
 Both case IDs 101 and 106 are assigned to index 1. The system checks the stored keys to retrieve the correct record.
 
@@ -724,13 +681,7 @@ A **graph** consists of nodes (vertices) connected by edges. In our fictional FB
 
 Consider this undirected graph:
 
-```text
-        A
-       / \
-      B   C
-      |   |
-      D   E
-```
+![Five-node contact network](../assets/Image_20261023165337_210_156.jpg)
 
 Connections:
 
