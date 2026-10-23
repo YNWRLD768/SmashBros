@@ -22,7 +22,7 @@
 2. Expect to be challenged by the topics, as many may seem unheard of, abstract, or new. Expect to get questions wrong and struggle to piece together the concepts. However, do expect to be guided well by the use of many worked examples, diagrams, and a variety of study materials (PPT, Study Guide, Video Tutorials) to suit everyone's learning style. 
 
 3. File Structure
-
+```
    SmashBros/
    ├── README.md
    │
@@ -54,3 +54,4 @@
                Threshold Neuron Truck Classification.png,
                bb-bh-Training-vs-Inference_Final.png,
                Clustering_Data.png, Image_2026102316…jpg, …
+```
