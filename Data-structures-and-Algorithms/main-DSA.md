@@ -310,16 +310,7 @@ A **stack** is a linear data structure that follows the **Last-In, First-Out (LI
 
 Stacks can be implemented using arrays or linked lists. Their defining feature is the order in which items are added and removed, not whether their storage is static or dynamic.
 
-```
-        │  Data C  │  ▲ Top (Pushed Last / Popped First)
-        ├──────────┤  │
-        │  Data B  │  │
-        ├──────────┤  │
-        │  Data A  │  │ Bottom
-        └──────────┘
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Stack:** Illustrate A, B, C with the top labeled and push/pop arrows showing LIFO.
+![stacks](../assets/Image_2026_10_23_15.39.37.jpeg)
 
 #### FBI Example: Investigating Leads
 
