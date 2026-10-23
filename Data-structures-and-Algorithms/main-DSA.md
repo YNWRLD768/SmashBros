@@ -201,7 +201,7 @@ In a fixed-length array, elements of the same size are stored next to one anothe
 
 For example, imagine an array containing four fictional FBI case IDs:
 
-![Arrays illustration table](../assets/Drawn/Creation_Image_1792591572896_1.png)
+![Arrays illustration table](../assets/Image_2026_10_23_15.39.38.jpeg)
 
 Assume each ID occupies 4 bytes and the first element begins at address 1000.
 
