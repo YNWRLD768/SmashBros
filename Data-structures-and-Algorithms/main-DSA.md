@@ -364,16 +364,7 @@ In a FIFO processing queue, the records are processed in the order **A → B →
 
 **Answer:** A, because it entered the queue first.
 
-```
-               Enqueue (Insert)                             Dequeue (Remove)
-               ───────────────>                             ───────────────>
-┌────────┐    ┌────────┬────────┬────────┬────────┬────────┐    ┌────────┐
-│ Incoming│───>│ Element│ Element│ Element│ Element│ Element│───>│ Outgoing│
-└────────┘    └────────┴────────┴────────┴────────┴────────┘    └────────┘
-               Rear (Tail)                         Front (Head)
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Queue:** Draw a FIFO queue showing A, B, and C, with front/rear labels and enqueue/dequeue arrows.
+![FBI example](../assets/Image_20261023160716_204_156.jpg)
 
 #### Primary Operations
 
