@@ -602,7 +602,7 @@ Imagine an analyst searching for Case ID 91 in this unsorted list:
 
 The algorithm checks each element:
 
-![Search case example](../assets/Image_20261023160713_203_156.jpg)
+![Search case example](../assets/Image_20261023160706_202_156.jpg)
 
 The algorithm requires **5 comparisons**.
 
@@ -773,16 +773,7 @@ For this example, the top of the stack is shown on the right. To visit alphabeti
 
 #### DFS Worked Example
 
-| Step | Node Processed | Stack After Processing |
-|---|---|---|
-| Start | — | [A] |
-| 1 | A | [C, B] |
-| 2 | B | [C, D] |
-| 3 | D | [C] |
-| 4 | C | [E] |
-| 5 | E | [] |
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — DFS:** Illustrate the five-node contact network and the stack state at each step of DFS.
+![DFS work example](../assets/Image_20261023160713_203_156.jpg)
 
 **DFS Visit Order: A → B → D → C → E**
 
@@ -792,15 +783,7 @@ The exact visit order can change depending on which neighboring node is processe
 
 ### 3. BFS vs. DFS
 
-| Feature | BFS | DFS |
-|---|---|---|
-| Data structure | Queue | Stack |
-| Rule | FIFO | LIFO |
-| Exploration | Level by level | Deep along a path first |
-| Visit order in our example | A, B, C, D, E | A, B, D, C, E |
-| Typical use | Fewest-edge paths in unweighted graphs | Exploring paths and backtracking |
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — BFS vs. DFS:** Draw two versions of the five-node graph showing BFS and DFS visit order, with a queue/stack legend.
+![BFS vs DFS](../assets/Image_20261023160723_206_156.jpg)
 
 Both algorithms should keep track of visited or discovered nodes to avoid repeatedly exploring the same nodes in graphs containing cycles.
 
