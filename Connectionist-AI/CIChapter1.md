@@ -1,3 +1,6 @@
+# **Chapter One**
+
+
 # What is artificial intelligence (AI)?
 ---
 
@@ -119,6 +122,8 @@ ___
 * Humans rank different AI responses. A reward model uses these rankings to teach the AI which answers are accurate, helpful and safe.
 ---
 
+# **Chapter Two**
+
 * But while doing this there are three methods to train the AI, which are: -
 
     ##                                      1. Supervised Learning.
@@ -234,8 +239,9 @@ ___
 
 * **Unsupervised learning is really useful when it comes to saving time but also really challenging since the model can pickup noises rather than real data from the dataset leading to overfitting.**
 
+# **Chapter 3**
 
-    # Machine Learning.
+# Machine Learning.
 
 * A simple way to think about AI is as a series of nested or derivative concepts that have emerged over more than 70 years:
 
@@ -349,4 +355,3 @@ ___
 
 
 * Now lets get to the fun part, have you ever imagined how an AI models approaches human intelligence. It is all about mimicking the human brain but not about replecating it, so there must be a way or two or even three to mimic human intelligence, however great it is. The next part walks us through one of the approaches a model mimic human intelligence.
-
