@@ -465,13 +465,7 @@ Hash tables provide **expected O(1) lookup** under suitable conditions, making t
 
 **Important:** Hash tables are designed for exact-key retrieval. They do not automatically recognize similar fingerprints, faces, or images.
 
-```
-Key ("John") ───> [ Hash Function ] ───> Index 3 ───> Array[3] = "555-0199"
-```
-
-> **✏️ HAND-DRAWN DIAGRAM TODO — Hash table:** Draw key → hash function → array index → case record; include an example of a collision.
-
----
+![Hash table example](../assets/Image_20261023160721_205_156.jpg)
 
 ## Hash Functions and Their Importance
 
