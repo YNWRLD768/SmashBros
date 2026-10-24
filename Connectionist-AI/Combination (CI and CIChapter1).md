@@ -235,7 +235,8 @@ ___
 * So, a person is buying shoes, it is highly likely that the person will buy socks too.
 ![association based learning](../assets/mmexport1792743999844.jpg)
 
-    The image above shows an example of the application of association based learning in an app. In this case, **Taobao** creates a system that gives the user relevant items based on the one they are interested in. 
+* The image above shows an example of the application of association based learning in an app. In this case, **Taobao** creates a system that gives the user relevant items based on the one they are interested in.
+* This is how the model is trained it sees there in an interest in a notebook and if there is an interest in the notebook there must be an interest in a pen too.
 
     ### 3. Dimensionality Reduction.
 
@@ -922,17 +923,14 @@ It is a prediction about image appearance, not a verified fact. The score is not
 ---
 
 ## 10. References
-
-The calculations in this chapter are simplified teaching models. Practical neural networks often use more neurons, graded activation functions, and more sophisticated training procedures; hidden neurons rarely have neatly defined human-readable meanings.
-
-**Introductory online resources (verify link addresses before publication):**
+**Introductory online resources:**
 
 - Google for Developers, *Machine Learning Crash Course*, [Neural networks: Nodes and hidden layers](https://developers.google.com/machine-learning/crash-course/neural-networks/nodes-hidden-layers) **[VERIFY URL]** — neurons, weights, bias, and layers.
 - Google for Developers, *Machine Learning Crash Course*, [Neural networks: Activation functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions) **[VERIFY URL]** — how outputs are transformed.
 - Google for Developers, *Machine Learning Crash Course*, [Classification: Accuracy, recall, precision, and related metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall) **[VERIFY URL]** — confusion-matrix terminology and evaluation metrics.
 - Google for Developers, *Machine Learning Crash Course*, [Overfitting](https://developers.google.com/machine-learning/crash-course/overfitting/overfitting) **[VERIFY URL]** — held-out data and generalization.
 
-**Course references still to verify against the editions actually used:**
+**Course references:**
 
 - Brookshear, J. G., and Brylow, D., *Computer Science: An Overview*. *[Edition, chapter, and page numbers: needs verification.]*
 - Russell, S., and Norvig, P., *Artificial Intelligence: A Modern Approach*. *[Edition, chapter, and page numbers: needs verification.]*
