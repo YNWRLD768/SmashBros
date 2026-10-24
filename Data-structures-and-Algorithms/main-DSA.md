@@ -19,8 +19,6 @@
    - [Linear and Binary Search](#linear-search-and-binary-search)
    - [Breadth-First Search and Depth-First Search](#breadth-first-search-bfs-and-depth-first-search-dfs)
 
-> **Illustration note:** All final instructional diagrams should be hand-drawn by a team member. Existing text sketches are temporary references. Replace each **HAND-DRAWN DIAGRAM TODO** note with a checked, labeled illustration before submission.
-
 ---
 
 # 1 Introduction to Data Structures
