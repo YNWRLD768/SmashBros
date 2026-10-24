@@ -760,4 +760,4 @@ BFS and DFS do not always produce the same visit order.
 
 BFS uses a queue to explore nearby nodes first, while DFS uses a stack (or recursion) to explore a path deeply before backtracking.
 
-**FBI Theme Disclaimer:** This is a fictional educational example, not a description of real investigative procedures.
+
