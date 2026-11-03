@@ -481,13 +481,6 @@ weighted sum = (2 x 0.2) + (1 x 0.3) = 0.4 + 0.3 = 0.7
 
 The neuron gave more influence to the boxy-rear feature (weight 2) than to size (weight 1). Changing the weights changes the behavior, and as we will see, *learning means finding good weights*.
 
-<!-- **HAND-DRAWN DIAGRAM TODO #1 — One artificial neuron** 
-**Caption:** Two numerical features enter a threshold neuron and produce a toy yes/no output.
-
-Show inputs `x1 = 0.8` (boxiness) and `x2 = 0.6` (size), with arrows weighted `w1 = 2` and `w2 = 1`.
-Show the neuron adding `2 × 0.8 + 1 × 0.6 = 2.2` and checking threshold `1.5`.
-Label the single outgoing arrow `output = 1` ("truck-like"). -->
-
 ![one artificial neuron](../assets/Threshold%20Neuron%20Truck%20Classification.png)
 
 ### A note on bias
@@ -526,14 +519,6 @@ We reuse Image A (`x1 = 0.8`, `x2 = 0.6`) and add a hidden layer of two neurons 
 | Output | "truck" | 1, -1 | 0.5 | (1 x 1) + (-1 x 0) = 1 | 1 |
 
 The output neuron receives the **outputs of the hidden neurons**, not the original input numbers directly. For Image A, Hidden A outputs 1 and Hidden B outputs 0, so the final output is 1 ("truck-like"). Importantly, **Hidden A is not an exact "large and boxy" rule**: its first input alone can be high enough to pass the threshold. Its descriptive label is a teaching aid, not a claim about a precise logical condition.
-
-<!-- **HAND-DRAWN DIAGRAM TODO #2 — Two-hidden-neuron network**  
-**Caption:** A forward pass combines two inputs through two hidden neurons before making a prediction.
-
-- Draw input circles `x1 = 0.8`, `x2 = 0.6`; hidden circles A and B; and one output circle, "Truck?".
-- Label all input-to-hidden weights (A: `2, 1`; B: `1, -1`) and hidden-to-output weights (`1, -1`).
-- For Image A, label hidden sums and outputs `2.2 → 1`, `0.2 → 0`, and final output `1`; add a left-to-right "forward pass" arrow.
-- Keep the neuron names neutral: neither hidden neuron is an exact logical AND rule. -->
 
 ![two hidden neuron network](../assets/3b09a48e222fd65457006931b5a771aa487ffb09d42d6a015b026cf9342c4539.png)
 
@@ -581,8 +566,6 @@ The main idea is a repeating loop:
 
 **Remember:** Training aims to improve performance across different examples. Correcting one prediction does not guarantee improvement on every other image.
 
-<details>
-<summary><strong>Optional: try the arithmetic</strong></summary>
 
 Return to our one neuron (`w1 = 2`, `w2 = 1`, threshold `1.5`). A fictional delivery van has features `x1 = 0.9`, `x2 = 0.4` and reference label **0 (not truck)**.
 
@@ -606,14 +589,6 @@ New output: 0 ("not truck")
 
 That change fixes the van example. But if Image A is truly a truck, its new sum is `(1.1 × 0.8) + (0.6 × 0.6) = 1.24`, below the threshold. The model now misses Image A. Fixing one example can create another error. Real multilayer networks use more sophisticated learning methods; this optional calculation is only a simple illustration of feedback and adjustment.
 
-</details>
-
-<!-- **HAND-DRAWN DIAGRAM TODO #3 — Training loop**  
-**Caption:** A labeled example gives the model feedback that can guide weight changes.
-
-- Draw four connected boxes: `Predict → Compare → Adjust → Repeat`, with an arrow looping back to Predict.
-- Show a small fictional van image and its reference label `not truck` beside the Compare step.
-- Mark weight adjustment as occurring in **training**, not during ordinary inference; leave the detailed numbers for the optional box. -->
 
 ![training loop](../assets/5f4453abc19d0783adc4968c1c47158f2546268f145001e51b00fd1e17cdb48d.png)
 
@@ -696,13 +671,6 @@ Hidden B sum: (1 x 0.8) - (1 x 0.6)  = 0.2
 
 Doing these weighted sums in an organized group is one reason arrays and matrices are useful. Practical neural networks can store very large numbers of parameters in multidimensional arrays.
 
-<!--**HAND-DRAWN DIAGRAM TODO #4 — Pixel values and feature arrays**  
-**Caption:** A pixel grid and a two-feature input are different representations with different weight requirements.
-
-- Show a `3 × 3` gray-scale grid flattened into **9 pixel values**.
-- Add a **dashed, explicitly assumed** step: "two features were already measured," leading to `boxiness = 0.8` and `size = 0.6`.
-- Connect those two values to a `2 × 2` weight grid, then to weighted sums `2.2` and `0.2`.
-- Label the distinction: **nine direct pixel inputs would need nine weights per neuron**, not two. -->
 
 ![pixel values and feature arrays](../assets/ba8c24c1feec2e64cee5977ce00316c5d4af54ba9c7f17b4a94bba8c52d767a7.png)
 
@@ -784,7 +752,7 @@ Roughly speaking, a prediction means the model detected patterns it associates w
 
 ## 8. Activity B: Evaluate an AI Lead
 
-**Scenario (fictional).** In Harbor-17, an invented classifier flagged some roadside images as "truck". A supervisor asks you to evaluate eight results. For this exercise, a test set of images has been labeled by trained reviewers, so the true category is known. All data below is invented.
+**Scenario ** In Harbor-17, an invented classifier flagged some roadside images as "truck". A supervisor asks you to evaluate eight results. For this exercise, a test set of images has been labeled by trained reviewers, so the true category is known. All data below is invented.
 
 | Image ID | Model prediction | Score for predicted class | Verified actual |
 |---|---|---|---|
@@ -925,15 +893,15 @@ It is a prediction about image appearance, not a verified fact. The score is not
 ## 10. References
 **Introductory online resources:**
 
-- Google for Developers, *Machine Learning Crash Course*, [Neural networks: Nodes and hidden layers](https://developers.google.com/machine-learning/crash-course/neural-networks/nodes-hidden-layers) **[VERIFY URL]** — neurons, weights, bias, and layers.
-- Google for Developers, *Machine Learning Crash Course*, [Neural networks: Activation functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions) **[VERIFY URL]** — how outputs are transformed.
-- Google for Developers, *Machine Learning Crash Course*, [Classification: Accuracy, recall, precision, and related metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall) **[VERIFY URL]** — confusion-matrix terminology and evaluation metrics.
-- Google for Developers, *Machine Learning Crash Course*, [Overfitting](https://developers.google.com/machine-learning/crash-course/overfitting/overfitting) **[VERIFY URL]** — held-out data and generalization.
+- Google for Developers, *Machine Learning Crash Course*, [Neural networks: Nodes and hidden layers](https://developers.google.com/machine-learning/crash-course/neural-networks/nodes-hidden-layers) — neurons, weights, bias, and layers.
+- Google for Developers, *Machine Learning Crash Course*, [Neural networks: Activation functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions) — how outputs are transformed.
+- Google for Developers, *Machine Learning Crash Course*, [Classification: Accuracy, recall, precision, and related metrics](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall) — confusion-matrix terminology and evaluation metrics.
+- Google for Developers, *Machine Learning Crash Course*, [Overfitting](https://developers.google.com/machine-learning/crash-course/overfitting/overfitting) — held-out data and generalization.
 
 **Course references:**
 
-- Brookshear, J. G., and Brylow, D., *Computer Science: An Overview*. *[Edition, chapter, and page numbers: needs verification.]*
-- Russell, S., and Norvig, P., *Artificial Intelligence: A Modern Approach*. *[Edition, chapter, and page numbers: needs verification.]*
-- The project's approved module scope and final DSA chapter. *[Internal cross-references: verify before publication.]*
+- Brookshear, J. G., and Brylow, D., *Computer Science: An Overview*.
+- Russell, S., and Norvig, P., *Artificial Intelligence: A Modern Approach*.
+- The project's approved module scope and final DSA chapter.
 
 
