@@ -19,11 +19,8 @@
    - [Linear and Binary Search](#linear-search-and-binary-search)
    - [Breadth-First Search and Depth-First Search](#breadth-first-search-bfs-and-depth-first-search-dfs)
 
-<<<<<<< HEAD
-=======
 <!-- **Illustration note:** All final instructional diagrams should be hand-drawn by a team member. Existing text sketches are temporary references. Replace each **HAND-DRAWN DIAGRAM TODO** note with a checked, labeled illustration before submission.-->
 
->>>>>>> hand-drawn-illustrations
 ---
 
 # 1 Introduction to Data Structures
@@ -47,7 +44,7 @@ Choosing the right data structure directly impacts software performance, scalabi
 - **Saves Memory:** Utilizes space efficiently to minimize memory overhead and prevent wasteful allocations.
 - **Speeds Things Up:** Dramatically reduces execution time and computational steps for retrieving or updating information.
 - **Organizes Data:** Keeps relationships between data points clean, intuitive, and easy to maintain.
-- **Supports Complex Tasks:** Enables advanced operations like pathfinding, transaction logging, network routing, and real-time query processing.
+- **Supports Complex Tasks:** Enables advanced operations like path-finding, transaction logging, network routing, and real-time query processing.
 
 ---
 
@@ -122,11 +119,7 @@ Graphs will be explored further when introducing **Breadth-First Search (BFS)** 
 
 ### Data Structure Classification Diagram
 
-<<<<<<< HEAD
-![Classification of data sructures](../assets/Image_2026_10_23_15.39.39.jpeg)
-=======
-![Classification of data sructures](../assets/Drawn/01.png) 
->>>>>>> hand-drawn-illustrations
+![Classification of data structures](../assets/Drawn/01.png) 
 
 
 
@@ -155,11 +148,7 @@ Although Big O is commonly used to describe worst-case complexity, it does not a
 
 For example, O(1) means the amount of work stays bounded as the input grows. It does **not** mean an operation always takes exactly the same amount of real-world time.
 
-<<<<<<< HEAD
-![Big O notation](../assets/Image_2026_10_23_15.39.38.1.jpeg)
-=======
 ![Big O notation](../assets/Drawn/02.png)
->>>>>>> hand-drawn-illustrations
 
 
 ### 1. Constant Time: $O(1)$
@@ -212,11 +201,7 @@ In a fixed-length array, elements of the same size are stored next to one anothe
 
 For example, imagine an array containing four fictional FBI case IDs:
 
-<<<<<<< HEAD
-![Arrays illustration table](../assets/Image_2026_10_23_15.39.38.jpeg)
-=======
 ![Arrays illustration table](../assets/Drawn/03.png)
->>>>>>> hand-drawn-illustrations
 
 Assume each ID occupies 4 bytes and the first element begins at address 1000.
 
@@ -287,11 +272,7 @@ Other variations exist, such as doubly linked and circular linked lists, but the
 
 The key distinction is that arrays support direct indexing, while linked lists connect nodes through references.
 
-<<<<<<< HEAD
-![linked list](../assets/Image_2026_10_23_15.39.37.1.jpeg)
-=======
 ![linked list](../assets/Drawn/04.png)
->>>>>>> hand-drawn-illustrations
 
 #### Types of Linked Lists
 
@@ -329,12 +310,8 @@ A **stack** is a linear data structure that follows the **Last-In, First-Out (LI
 
 Stacks can be implemented using arrays or linked lists. Their defining feature is the order in which items are added and removed, not whether their storage is static or dynamic.
 
-<<<<<<< HEAD
-![stacks](../assets/Image_2026_10_23_15.39.37.jpeg)
-=======
 ![stacks illustration](../assets/Drawn/05.png)
 
->>>>>>> hand-drawn-illustrations
 
 #### FBI Example: Investigating Leads
 
@@ -388,11 +365,7 @@ In a FIFO processing queue, the records are processed in the order **A → B →
 
 **Answer:** A, because it entered the queue first.
 
-<<<<<<< HEAD
-![FBI example](../assets/Image_20261023160716_204_156.jpg)
-=======
 ![queue diagram illustration](../assets/Drawn/06.png)
->>>>>>> hand-drawn-illustrations
 
 #### Primary Operations
 
@@ -423,9 +396,37 @@ Two examples are **trees** and **graphs**.
 
 This module focuses on **graphs**, since they are directly connected to Breadth-First Search (BFS) and Depth-First Search (DFS). Detailed tree structures are outside our scope.
 
-![Trees example](../assets/Image_20261023165343_212_156.jpg)
+```
+                     ┌──────────┐
+                     │  Root    │  (Level 0)
+                     └────┬─────┘
+             ┌────────────┴────────────┐
+             ▼                         ▼
+       ┌──────────┐              ┌──────────┐
+       │ Node A   │              │ Node B   │  (Level 1)
+       └────┬─────┘              └────┬─────┘
+     ┌──────┴──────┐                  │
+     ▼             ▼                  ▼
+┌──────────┐  ┌──────────┐      ┌──────────┐
+│ Leaf C   │  │ Leaf D   │      │ Leaf E   │  (Level 2)
+└──────────┘  └──────────┘      └──────────┘
+```
 
-![trees example 2](../assets/Image_20261023165341_211_156.jpg)
+```
+                     ┌──────────┐
+                     │    50    │
+                     └────┬─────┘
+             ┌────────────┴────────────┐
+             ▼                         ▼
+       ┌──────────┐              ┌──────────┐
+       │    30    │              │    70    │
+       └────┬─────┘              └────┬─────┘
+     ┌──────┴──────┐            ┌──────┴──────┐
+     ▼             ▼            ▼             ▼
+┌──────────┐  ┌──────────┐ ┌──────────┐  ┌──────────┐
+│    20    │  │    40    │ │    60    │  │    80    │
+└──────────┘  └──────────┘ └──────────┘  └──────────┘
+```
 
 ---
 
@@ -433,11 +434,7 @@ This module focuses on **graphs**, since they are directly connected to Breadth-
 
 A **graph** is a non-linear network structure composed of a set of vertices (or nodes) $V$ and a set of edges $E$ that connect pairs of vertices.
 
-<<<<<<< HEAD
-![Graphs example](../assets/Image_20261023160704_201_156.jpg)
-=======
 ![graph illustration](../assets/Drawn/07.png)
->>>>>>> hand-drawn-illustrations
 
 #### Core Classifications
 
@@ -469,13 +466,9 @@ Hash tables provide **expected O(1) lookup** under suitable conditions, making t
 
 **Important:** Hash tables are designed for exact-key retrieval. They do not automatically recognize similar fingerprints, faces, or images.
 
-<<<<<<< HEAD
-![Hash table example](../assets/Image_20261023160721_205_156.jpg)
-=======
 ![hash table diagram](../assets/Drawn/08.png)
 
 ---
->>>>>>> hand-drawn-illustrations
 
 ## Hash Functions and Their Importance
 
@@ -495,13 +488,22 @@ A good hash function helps make lookup efficient, but it cannot guarantee that c
 
 A **collision** occurs when two distinct keys generate the exact same array index.
 
-![Collision resolution](../assets/Image_20261023165414_215_156.jpg)
+```
+Key 1 ("Alice") ──┐
+                  ├─> [ Hash Function ] ──> Index 5  (COLLISION!)
+Key 2 ("Bob")   ──┘
+```
 
 ### 1. Chaining (Open Hashing)
 
 Each array slot holds a pointer to a singly linked list. When keys collide, the new key-value pair is appended to the linked list at that specific index.
 
-![Chaining](../assets/Image_20261023165411_214_156.jpg)
+```
+Index 0:
+Index 1: [ KeyA | ValA ] ──> [ KeyB | ValB ] ──> Null
+Index 2:
+Index 3: [ KeyC | ValC ] ──> Null
+```
 
 ### Understanding Collisions
 
@@ -511,7 +513,13 @@ One simple solution is **chaining**, where multiple key-value pairs are stored t
 
 For example:
 
-![Understanding collisions](../assets/Image_20261023165408_213_156.jpg)
+```text
+Index 0: Empty
+Index 1: [101 → Case A] → [106 → Case B]
+Index 2: Empty
+Index 3: Empty
+Index 4: Empty
+```
 
 Both case IDs 101 and 106 are assigned to index 1. The system checks the stored keys to retrieve the correct record.
 
@@ -597,11 +605,7 @@ Imagine an analyst searching for Case ID 91 in this unsorted list:
 
 The algorithm checks each element:
 
-<<<<<<< HEAD
-![Search case example](../assets/Image_20261023160706_202_156.jpg)
-=======
 ![linear search](../assets/Drawn/09.png)
->>>>>>> hand-drawn-illustrations
 
 The algorithm requires **5 comparisons**.
 
@@ -723,7 +727,13 @@ A **graph** consists of nodes (vertices) connected by edges. In our fictional FB
 
 Consider this undirected graph:
 
-![Five-node contact network](../assets/Image_20261023165337_210_156.jpg)
+```text
+        A
+       / \
+      B   C
+      |   |
+      D   E
+```
 
 Connections:
 
@@ -766,9 +776,6 @@ For this example, the top of the stack is shown on the right. To visit alphabeti
 
 #### DFS Worked Example
 
-<<<<<<< HEAD
-![DFS work example](../assets/Image_20261023160713_203_156.jpg)
-=======
 | Step | Node Processed | Stack After Processing |
 |---|---|---|
 | Start | — | [A] |
@@ -781,7 +788,6 @@ For this example, the top of the stack is shown on the right. To visit alphabeti
 | 7 | G | [] |
 
 ![dfs diagram](../assets/Drawn/10.png)
->>>>>>> hand-drawn-illustrations
 
 **DFS Visit Order: A → B → D → E → F → C → G**
 
@@ -791,9 +797,6 @@ The exact visit order can change depending on which neighboring node is processe
 
 ### 3. BFS vs. DFS
 
-<<<<<<< HEAD
-![BFS vs DFS](../assets/Image_20261023160723_206_156.jpg)
-=======
 | Feature | BFS | DFS |
 |---|---|---|
 | Data structure | Queue | Stack |
@@ -803,7 +806,6 @@ The exact visit order can change depending on which neighboring node is processe
 | Typical use | Fewest-edge paths in unweighted graphs | Exploring paths and backtracking |
 
 ![bfs vs dfs diagram](../assets/Drawn/11.png)
->>>>>>> hand-drawn-illustrations
 
 Both algorithms should keep track of visited or discovered nodes to avoid repeatedly exploring the same nodes in graphs containing cycles.
 
@@ -829,4 +831,4 @@ BFS and DFS do not always produce the same visit order.
 
 BFS uses a queue to explore nearby nodes first, while DFS uses a stack (or recursion) to explore a path deeply before backtracking.
 
-
+**FBI Theme Disclaimer:** This is a fictional educational example, not a description of real investigative procedures.
