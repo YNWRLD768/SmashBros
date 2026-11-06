@@ -396,38 +396,9 @@ Two examples are **trees** and **graphs**.
 
 This module focuses on **graphs**, since they are directly connected to Breadth-First Search (BFS) and Depth-First Search (DFS). Detailed tree structures are outside our scope.
 
-```
-                     ┌──────────┐
-                     │  Root    │  (Level 0)
-                     └────┬─────┘
-             ┌────────────┴────────────┐
-             ▼                         ▼
-       ┌──────────┐              ┌──────────┐
-       │ Node A   │              │ Node B   │  (Level 1)
-       └────┬─────┘              └────┬─────┘
-     ┌──────┴──────┐                  │
-     ▼             ▼                  ▼
-┌──────────┐  ┌──────────┐      ┌──────────┐
-│ Leaf C   │  │ Leaf D   │      │ Leaf E   │  (Level 2)
-└──────────┘  └──────────┘      └──────────┘
-```
+![Trees](../assets/Image_20261023165343_212_156.jpg)
 
-```
-                     ┌──────────┐
-                     │    50    │
-                     └────┬─────┘
-             ┌────────────┴────────────┐
-             ▼                         ▼
-       ┌──────────┐              ┌──────────┐
-       │    30    │              │    70    │
-       └────┬─────┘              └────┬─────┘
-     ┌──────┴──────┐            ┌──────┴──────┐
-     ▼             ▼            ▼             ▼
-┌──────────┐  ┌──────────┐ ┌──────────┐  ┌──────────┐
-│    20    │  │    40    │ │    60    │  │    80    │
-└──────────┘  └──────────┘ └──────────┘  └──────────┘
-```
-
+![Trees](../assets/Image_20261023165341_211_156.jpg)
 ---
 
 ## Graphs
@@ -488,11 +459,7 @@ A good hash function helps make lookup efficient, but it cannot guarantee that c
 
 A **collision** occurs when two distinct keys generate the exact same array index.
 
-```
-Key 1 ("Alice") ──┐
-                  ├─> [ Hash Function ] ──> Index 5  (COLLISION!)
-Key 2 ("Bob")   ──┘
-```
+![Collisons](../assets/Image_20261023165408_213_156.jpg)
 
 ### 1. Chaining (Open Hashing)
 
@@ -513,13 +480,7 @@ One simple solution is **chaining**, where multiple key-value pairs are stored t
 
 For example:
 
-```text
-Index 0: Empty
-Index 1: [101 → Case A] → [106 → Case B]
-Index 2: Empty
-Index 3: Empty
-Index 4: Empty
-```
+![Collisons](../assets/Image_20261023165408_213_156.jpg)
 
 Both case IDs 101 and 106 are assigned to index 1. The system checks the stored keys to retrieve the correct record.
 
@@ -727,13 +688,6 @@ A **graph** consists of nodes (vertices) connected by edges. In our fictional FB
 
 Consider this undirected graph:
 
-```text
-        A
-       / \
-      B   C
-      |   |
-      D   E
-```
 
 Connections:
 
@@ -776,16 +730,7 @@ For this example, the top of the stack is shown on the right. To visit alphabeti
 
 #### DFS Worked Example
 
-| Step | Node Processed | Stack After Processing |
-|---|---|---|
-| Start | — | [A] |
-| 1 | A | [C, B] |
-| 2 | B | [C, E, D] |
-| 3 | D | [C, E] |
-| 4 | C | [C, F] |
-| 5 | E | [C] |
-| 6 | F | [G] |
-| 7 | G | [] |
+![DFS Worked Example](../assets/Image_20261023160713_203_156.jpg)
 
 ![dfs diagram](../assets/Drawn/Data%20Structure/10.png)
 
@@ -830,5 +775,3 @@ Using the five-node graph above:
 BFS and DFS do not always produce the same visit order.
 
 BFS uses a queue to explore nearby nodes first, while DFS uses a stack (or recursion) to explore a path deeply before backtracking.
-
-**FBI Theme Disclaimer:** This is a fictional educational example, not a description of real investigative procedures.
