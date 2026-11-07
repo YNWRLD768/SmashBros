@@ -301,9 +301,11 @@ ___
 
 * A neural network is composed of: -
 
-     **Input Layer: -** This holds the raw features.
-     **Hidden Layers: -** Consists of artificial neurons (or nodes) that transform inputs into new representations. This is where the linear transformation between input and output happens.
-     **Output Layer: -** After performing the linear transformation in the hidden layer, a final prediction is made.
+**Input Layer: -** This holds the raw features.
+    
+**Hidden Layers: -** Consists of artificial neurons (or nodes) that transform inputs into new representations. This is where the linear transformation between input and output happens.
+
+**Output Layer: -** After performing the linear transformation in the hidden layer, a final prediction is made.
 
 * A neural network has a "neuron" for each input (each of the pixels of the images) and a neuron for each output (each of the 10 possible digits).
 
