@@ -15,7 +15,7 @@ We have all used AI, and have seen how powerful it can be but do we really know 
 ## AI Technologies Include:
 * Autonomous vehicles         
 * Biometrics
-* Chatbots      
+* Chatbot      
 * Facial and voice recognition 
 * Image generation 
 * Digital Assistants 
@@ -172,12 +172,12 @@ ___
     #### 2. Decision Tree and Random Forest.
 
 * **Decision tree** is a single model, while a random forest is an ensemble model made up of many individual decision trees working together.
-![decision tree](../assets/images.png)
+![decision tree](../assets/Drawn/Connectionist%20AI/01.png)
 
 * Decision tree starts from a single node and splits it to the feature that provides the cleanest separations until it reaches a leaf node which then gives the final prediction. It is easy to visualize and kind of mimics human decision making but it is also prone to overfitting and makes up new data.
 
 * A **Random Forest** fixes the flaws of a single decision tree by creating a "forest" of many independent trees (often hundreds) and aggregating their answers. It relies on the concept that a collective crowd of average models will outperform a single "expert" model.
-![random forest](../assets/1_HO7OUBuwpTHswE3NTs47Fg.png)
+![random forest](../assets/Drawn/Connectionist%20AI/02.png)
 
     * **Bootstrapping (Bagging): -** Each tree is trained on a random sample of the rows from the dataset, sampled with replacement.
     * **Feature Randomness: -** When a tree splits a node, it is only allowed to choose from a random subset of features (columns) rather than evaluating all of them.
@@ -414,12 +414,12 @@ This approach is powerful, but it can be oversold. A program that says **"truck,
 
 **Learning goals.** After this chapter you should be able to explain:
 
-- what connectionist AI is and how it differs from fixed-rule programs
-- how artificial neurons and layers produce a prediction, including one small calculation
-- the difference between training and inference
-- how arrays and matrices store inputs and weights
-- what false positives and false negatives are, and how poor training data causes errors
-- why a prediction is a lead to be checked, never established evidence
+- What connectionist AI is and how it differs from fixed-rule programs
+- How artificial neurons and layers produce a prediction, including one small calculation
+- The difference between training and inference
+- How arrays and matrices store inputs and weights
+- What false positives and false negatives are, and how poor training data causes errors
+- Why a prediction is a lead to be checked, never established evidence
 
 ---
 
